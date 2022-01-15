@@ -1,0 +1,17 @@
+//
+//  ImplicitAnimationsApp.swift
+//  ImplicitAnimations
+//
+//  Created by Blaine Dannheisser on 1/7/22.
+//
+
+import SwiftUI
+
+@main
+struct ImplicitAnimationsApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
