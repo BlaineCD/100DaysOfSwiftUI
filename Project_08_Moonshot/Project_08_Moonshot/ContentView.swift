@@ -10,55 +10,81 @@ import SwiftUI
 struct ContentView: View {
     let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
     let missions: [Mission] = Bundle.main.decode("missions.json")
-
+    
     let columns = [
         GridItem(.adaptive(minimum: 150))
     ]
-
+    
+    @State private var listView = false
+    
     var body: some View {
         VStack {
             NavigationView {
-                ScrollView {
-                    LazyVGrid(columns: columns) {
-                        ForEach(missions) { mission in
-                            NavigationLink {
-                                MissionView(mission: mission, astronauts: astronauts)
-                            } label: {
-                                VStack {
-                                    Image(mission.image)
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 100, height: 100)
-                                        .padding()
-                                    VStack {
-                                        Text(mission.displayName)
-                                            .font(.headline)
-                                            .foregroundColor(.white)
-                                        Text(mission.formattedLaunchDate)
-                                            .font(.caption)
-                                            .foregroundColor(.white.opacity(0.5))
+                VStack {
+                    ScrollView {
+                        if listView == false {
+                            LazyVGrid(columns: columns) {
+                                ForEach(missions) { mission in
+                                    NavigationLink {
+                                        MissionView(mission: mission, astronauts: astronauts)
+                                    } label: {
+                                        VStack {
+                                            GridBadge(badge: mission.image)
+                                            VStack {
+                                                MissionTitle(title: mission.displayName)
+                                                DateTitle(date: mission.formattedLaunchDate)
+                                            }
+                                            .modifier(MissionDateLabel())
+                                        }
+                                        .modifier(MissionInfoFrame())
+                                        
                                     }
-                                    .padding(.vertical)
-                                    .frame(maxWidth: .infinity)
-                                    .background(.lightBackground)
                                 }
-                                .clipShape(RoundedRectangle(cornerRadius: 10))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 10)
-                                        .stroke(.lightBackground)
-                                )
+                            }
+                            // Challenge 3
+                        } else {
+                            VStack {
+                                ForEach(missions) { mission in
+                                    NavigationLink {
+                                        MissionView(mission: mission, astronauts: astronauts)
+                                    } label: {
+                                        VStack {
+                                            ListBadge(badge: mission.image)
+                                            VStack {
+                                                MissionTitle(title: mission.displayName)
+                                                DateTitle(date: mission.formattedLaunchDate)
+                                            }
+                                            .modifier(MissionDateLabel())
+                                        }
+                                        .modifier(MissionInfoFrame())
+                                    }
+                                }
                             }
                         }
                     }
-                    .padding([.horizontal, .bottom])
                 }
+                
+                .padding([.horizontal, .bottom])
                 .navigationTitle("Moonshot")
+                .toolbar(content: {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button {
+                            listView.toggle()
+                        } label: {
+                            Image(systemName: listView == true ? "square.grid.2x2" : "list.dash")
+                                .foregroundColor(.yellow)
+                        }
+                        
+                    }
+                })
                 .background(.darkBackground)
                 .preferredColorScheme(.dark)
             }
         }
     }
 }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
