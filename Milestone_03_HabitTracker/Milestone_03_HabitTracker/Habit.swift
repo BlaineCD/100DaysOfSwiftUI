@@ -11,5 +11,5 @@ struct Habit: Codable, Identifiable {
     var id = UUID()
     let name: String
     let description: String
-    let streak: Int
+    var count: Int
 }

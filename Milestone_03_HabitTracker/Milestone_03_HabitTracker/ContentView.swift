@@ -11,18 +11,14 @@ struct ContentView: View {
     
     @StateObject var habits = Habits()
     @State private var showingAddHabit = false
-    
-    let columns = [
-        GridItem(.adaptive(minimum: 150))
-    ]
-    
+
     var body: some View {
         NavigationView {
             List {
                 Section("Tracking Habits:") {
                     ForEach(habits.items, id: \.id) { item in
                         NavigationLink {
-                            HabitDetailView(habit: item)
+                            HabitDetailView(habits: habits, selectedHabit: item)
                         } label: {
                             VStack(alignment: .leading) {
                                 Text(item.name)

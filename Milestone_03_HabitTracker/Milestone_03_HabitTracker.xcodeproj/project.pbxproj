@@ -60,11 +60,11 @@
 			isa = PBXGroup;
 			children = (
 				DFEE497C279B18A900AB25CA /* Milestone_03_HabitTrackerApp.swift */,
+				DFEE497E279B18A900AB25CA /* ContentView.swift */,
 				DFEE4990279B6C4C00AB25CA /* AddHabit.swift */,
 				DF3EA667279BBF02003E03BC /* HabitDetailView.swift */,
-				DFEE497E279B18A900AB25CA /* ContentView.swift */,
-				DFEE498C279B1EFC00AB25CA /* Habit.swift */,
 				DFEE498E279B20F100AB25CA /* Habits.swift */,
+				DFEE498C279B1EFC00AB25CA /* Habit.swift */,
 				DFEE4980279B18AB00AB25CA /* Assets.xcassets */,
 				DFEE4982279B18AB00AB25CA /* Preview Content */,
 			);

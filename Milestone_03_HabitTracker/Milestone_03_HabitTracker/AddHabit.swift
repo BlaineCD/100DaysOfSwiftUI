@@ -13,6 +13,7 @@ struct AddHabit: View {
     @State private var name = ""
     @State private var description = ""
 
+
     var body: some View {
         NavigationView {
             VStack {
@@ -22,8 +23,8 @@ struct AddHabit: View {
                         .frame(height: 100)
                 }
                 Button {
-                    let habit = Habit(name: name, description: description)
-                    habits.items.append(habit)
+                    let newHabit = Habit(name: name, description: description, count: 0)
+                    habits.items.append(newHabit)
                     dismiss()
                 } label: {
                     Text("SUBMIT")
