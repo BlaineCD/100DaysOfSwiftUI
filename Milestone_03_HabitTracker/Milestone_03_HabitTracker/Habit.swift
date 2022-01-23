@@ -12,4 +12,5 @@ struct Habit: Codable, Identifiable {
     let name: String
     let description: String
     var count: Int
+    var dates = [Date]()
 }

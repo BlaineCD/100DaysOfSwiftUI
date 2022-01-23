@@ -17,6 +17,8 @@ class Habits: ObservableObject {
         }
     }
 
+    // MARK: Lifecycle
+
     init() {
         if let habits = UserDefaults.standard.data(forKey: "Habits") {
             if let savedHabits = try? JSONDecoder().decode([Habit].self, from: habits) {

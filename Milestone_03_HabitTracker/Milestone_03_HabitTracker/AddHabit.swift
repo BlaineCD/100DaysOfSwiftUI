@@ -7,12 +7,13 @@
 
 import SwiftUI
 
+// MARK: - AddHabit
+
 struct AddHabit: View {
-    @Environment (\.dismiss) var dismiss
+    @Environment(\.dismiss) var dismiss
     @ObservedObject var habits: Habits
     @State private var name = ""
     @State private var description = ""
-
 
     var body: some View {
         NavigationView {
@@ -23,9 +24,11 @@ struct AddHabit: View {
                         .frame(height: 100)
                 }
                 Button {
+                    if name != "" {
                     let newHabit = Habit(name: name, description: description, count: 0)
                     habits.items.append(newHabit)
                     dismiss()
+                    }
                 } label: {
                     Text("SUBMIT")
                         .foregroundColor(.white)
@@ -34,13 +37,14 @@ struct AddHabit: View {
                         .padding()
                 }
                 Spacer()
-
                     .navigationTitle("Add New Habit")
                     .navigationBarTitleDisplayMode(.inline)
             }
         }
     }
 }
+
+// MARK: - AddHabit_Previews
 
 struct AddHabit_Previews: PreviewProvider {
     static var previews: some View {
