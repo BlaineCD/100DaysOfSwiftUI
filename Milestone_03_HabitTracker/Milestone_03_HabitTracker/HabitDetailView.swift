@@ -64,9 +64,10 @@ struct HabitDetailView: View {
     }
 }
 
-// struct HabitDetail_Previews: PreviewProvider {
-//
-//    static var previews: some View {
-//        HabitDetailView(habits: Habit(name: "TEST", description: "TEST", count: 5), selectedHabit: Habit)
-//    }
-// }
+
+struct HabitDetail_Previews: PreviewProvider {
+     static var previews: some View {
+         let habit = Habit(name: "TEST", description: "TEST", count: 5)
+         HabitDetailView(habits: Habits(), selectedHabit: habit)
+     }
+ }
