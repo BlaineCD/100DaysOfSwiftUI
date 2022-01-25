@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Habit: Codable, Identifiable {
     var id = UUID()
@@ -13,4 +14,5 @@ struct Habit: Codable, Identifiable {
     let description: String
     var count: Int
     var dates = [Date]()
+    var color: String
 }

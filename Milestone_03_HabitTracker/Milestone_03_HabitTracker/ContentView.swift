@@ -25,8 +25,10 @@ struct ContentView: View {
                             VStack(alignment: .leading) {
                                 Text(item.name)
                                     .font(.title2.weight(.bold))
+                                    .foregroundColor(Color(item.color))
                                 Text("Streak Count: \(item.count)")
                                     .font(.body.weight(.semibold))
+                                    .foregroundColor(Color(item.color))
                                     .padding(.bottom, 0.6)
                                 Text(item.description)
                                     .font(.caption)

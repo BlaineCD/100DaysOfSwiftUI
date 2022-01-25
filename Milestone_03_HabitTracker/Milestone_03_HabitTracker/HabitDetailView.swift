@@ -67,7 +67,7 @@ struct HabitDetailView: View {
 
 struct HabitDetail_Previews: PreviewProvider {
      static var previews: some View {
-         let habit = Habit(name: "TEST", description: "TEST", count: 5)
+         let habit = Habit(name: "TEST", description: "TEST", count: 5, color: "red")
          HabitDetailView(habits: Habits(), selectedHabit: habit)
      }
  }
