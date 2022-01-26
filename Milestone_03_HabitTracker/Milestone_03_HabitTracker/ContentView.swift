@@ -30,10 +30,8 @@ struct ContentView: View {
                                     .font(.body.weight(.semibold))
                                     .foregroundColor(Color(item.color))
                                     .padding(.bottom, 0.6)
-                                Text(item.description)
-                                    .font(.caption)
-                                    .foregroundColor(.secondary)
                             }
+                            .padding()
                         }
                     }
                     .onDelete(perform: removeHabits)
@@ -41,12 +39,17 @@ struct ContentView: View {
             }
             .navigationTitle("HabitTrax")
             .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
                     showingAddHabit.toggle()
                 } label: {
-                    Image(systemName: "plus.diamond.fill")
+                    Image(systemName: "plus.circle")
                 }
             }
+                ToolbarItem(placement: .navigationBarLeading) {
+                    EditButton()
+                }
+        }
             .sheet(isPresented: $showingAddHabit) {
                 AddHabit(habits: habits)
             }

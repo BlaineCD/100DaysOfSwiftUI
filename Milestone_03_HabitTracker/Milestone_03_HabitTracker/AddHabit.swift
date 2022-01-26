@@ -22,20 +22,20 @@ struct AddHabit: View {
             VStack {
                 Form {
                     Section("Add New Habit") {
-                    TextField("New Habit", text: $name)
-                    TextField("Description", text: $description)
-                        .frame(height: 100)
+                        TextField("New Habit", text: $name)
+                        TextField("Description", text: $description)
+                            .frame(height: 100)
                     }
 
                     Section("Pick Color") {
                         HStack {
                             ForEach(colors, id: \.self) { choice in
                                 Button {
-                                selectedColor = choice
+                                    selectedColor = choice
                                 } label: {
                                     Image(systemName: "circle.fill")
                                         .foregroundColor(Color(choice))
-                                        .padding(12)
+                                        .frame(maxWidth: .infinity)
 
                                 }
                                 .buttonStyle(BorderlessButtonStyle())
@@ -46,16 +46,17 @@ struct AddHabit: View {
                 Button {
                     print(selectedColor)
                     if name != "" {
-                        let newHabit = Habit(name: name, description: description, count: 0, color: selectedColor)
-                    habits.items.append(newHabit)
-                    dismiss()
+                        let newHabit = Habit(name: name, description: description, notes: [""], count: 0, color: selectedColor)
+                        habits.items.append(newHabit)
+                        dismiss()
                     }
                 } label: {
                     Text("SUBMIT")
-                        .foregroundColor(.white)
+                        .padding()
                         .frame(width: 280, height: 80)
                         .background(.green)
-                        .padding()
+                        .cornerRadius(15)
+                        .foregroundColor(.white)
                 }
                 Spacer()
                     .navigationTitle("HabitTrax")
@@ -67,8 +68,8 @@ struct AddHabit: View {
 
 // MARK: - AddHabit_Previews
 
-//struct AddHabit_Previews: PreviewProvider {
-//    static var previews: some View {
-//        AddHabit(habits: Habits()
-//    }
-//}
+struct AddHabit_Previews: PreviewProvider {
+    static var previews: some View {
+        AddHabit(habits: Habits())
+    }
+}
