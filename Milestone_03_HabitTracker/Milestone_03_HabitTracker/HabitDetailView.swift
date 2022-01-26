@@ -39,7 +39,7 @@ struct HabitDetailView: View {
             }
 
             List {
-                Section("Completed:") {
+                Section("Completed 🔥") {
                     ForEach(Array(zip(selectedHabit.notes, selectedHabit.dates)), id: \.0) { note, date in
                         Text("\(note) \n \(date.formatted(date: .abbreviated, time: .shortened))")
                     }
