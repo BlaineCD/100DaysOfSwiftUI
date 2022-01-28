@@ -14,8 +14,10 @@ struct AddHabit: View {
     @ObservedObject var habits: Habits
     @State private var name = ""
     @State private var description = ""
-    @State private var selectedColor = "black"
-    let colors = ["green", "blue", "purple", "orange", "red", "black"]
+    @State private var selectedColor = ""
+    let colors = ["black", "green", "blue", "purple", "orange", "red"]
+    @State private var animationAmount = 0.0
+    @State private var isClicked = false
 
     var body: some View {
         NavigationView {
@@ -29,27 +31,26 @@ struct AddHabit: View {
 
                     Section("Pick Color") {
                         HStack {
-                            ForEach(colors, id: \.self) { choice in
+                            ForEach(colors, id: \.self) { color in
                                 Button {
-                                    selectedColor = choice
+                                    withAnimation {
+                                       selectedColor = color
+                                    }
                                 } label: {
                                     Image(systemName: "circle.fill")
-                                        .foregroundColor(Color(choice))
+                                        .foregroundColor(Color(color))
                                         .frame(maxWidth: .infinity)
-
                                 }
                                 .buttonStyle(BorderlessButtonStyle())
+                                .rotation3DEffect(.degrees(selectedColor == color  ? 360 : 0), axis: (x: 0, y: 1, z: 0))
                             }
                         }
                     }
                 }
                 Button {
-                    print(selectedColor)
-                    if name != "" {
-                        let newHabit = Habit(name: name, description: description, notes: [""], count: 0, color: selectedColor)
-                        habits.items.append(newHabit)
-                        dismiss()
-                    }
+                    let newHabit = Habit(name: name, description: description, notes: [""], count: 0, color: selectedColor)
+                    habits.items.append(newHabit)
+                    dismiss()
                 } label: {
                     Text("SUBMIT")
                         .padding()
@@ -58,6 +59,8 @@ struct AddHabit: View {
                         .cornerRadius(15)
                         .foregroundColor(.white)
                 }
+                .disabled(name.isEmpty)
+
                 Spacer()
                     .navigationTitle("HabitTrax")
                     .navigationBarTitleDisplayMode(.inline)
