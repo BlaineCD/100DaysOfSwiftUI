@@ -13,7 +13,8 @@ struct CheckoutView: View {
     @ObservedObject var order: Order
 
     @State private var showingConfirmation = false
-    @State private var confirmationMessaage = ""
+    @State private var confirmationTitle = ""
+    @State private var confirmationMessage = ""
 
     var body: some View {
         ScrollView {
@@ -40,10 +41,10 @@ struct CheckoutView: View {
         }
         .navigationTitle("Check Out")
         .navigationBarTitleDisplayMode(.inline)
-        .alert("Thank You!", isPresented: $showingConfirmation) {
+        .alert(confirmationTitle, isPresented: $showingConfirmation) {
             Button("OK") {}
         } message: {
-            Text(confirmationMessaage)
+            Text(confirmationMessage)
         }
     }
 
@@ -67,10 +68,13 @@ struct CheckoutView: View {
             let (data, _) = try await URLSession.shared.upload(for: request, from: encoded)
             // run the request and process the reposnse
             let decodedOrder = try JSONDecoder().decode(Order.self, from: data)
-            confirmationMessaage = "Your order for \(decodedOrder.quantity) \(Order.types[decodedOrder.type].lowercased()) cupcakes is on the way!"
+            confirmationTitle = "Thank you! Your order confirmation number is \(UUID())"
+            confirmationMessage = "Your order for \(decodedOrder.quantity) \(Order.types[decodedOrder.type].lowercased()) cupcakes is on the way!"
             showingConfirmation = true
         } catch {
-            print("Checkout failed.")
+            confirmationTitle = "Uh Oh"
+            confirmationMessage = "Please check your connection and try again"
+            showingConfirmation = true
         }
     }
 }
