@@ -8,41 +8,41 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var order = Order()
+    @StateObject var orderClass = OrderClass()
 
     var body: some View {
         NavigationView {
             Form {
                 Section {
-                    Picker("Pick Your Cake Flavor:", selection: $order.type) {
+                    Picker("Pick Your Cake Flavor:", selection: $orderClass.order.type) {
                         ForEach(Order.types.indices) {
                             Text(Order.types[$0])
                         }
                     }
-                    Stepper("Number of Cakes: \(order.quantity)",
-                            value: $order.quantity,
+                    Stepper("Number of Cakes: \(orderClass.order.quantity)",
+                            value: $orderClass.order.quantity,
                             in: 3...20)
                 }
                 Section {
                     Toggle("Any Special Requests?",
-                           isOn: $order.specialRequestEnabled.animation())
+                           isOn: $orderClass.order.specialRequestEnabled.animation())
 
-                    if order.specialRequestEnabled {
+                    if orderClass.order.specialRequestEnabled {
                         Toggle("Add Extra Frosting",
-                               isOn: $order.extraFrosting)
+                               isOn: $orderClass.order.extraFrosting)
                         Toggle("Add Extra Sprinkles",
-                               isOn: $order.addSprinkles)
+                               isOn: $orderClass.order.addSprinkles)
                     }
                 }
                 Section {
                     NavigationLink {
-                        AddressView(order: order)
+                        AddressView(orderClass: orderClass)
                     } label: {
                         Text("Delivery Details")
                     }
                 }
             }
-            .navigationTitle("Cupcake Corner")
+            .navigationTitle("🧁 Cupcake Corner 🧁")
         }
     }
 }
@@ -54,3 +54,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
