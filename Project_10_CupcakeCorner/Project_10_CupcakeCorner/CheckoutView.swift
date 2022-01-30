@@ -72,6 +72,7 @@ struct CheckoutView: View {
             confirmationMessage = "Your order for \(decodedOrder.quantity) \(Order.types[decodedOrder.type].lowercased()) cupcakes is on the way!"
             showingConfirmation = true
         } catch {
+            //Challenge 2
             confirmationTitle = "Uh Oh"
             confirmationMessage = "Please check your connection and try again"
             showingConfirmation = true
