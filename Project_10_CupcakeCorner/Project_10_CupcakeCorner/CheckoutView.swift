@@ -7,8 +7,13 @@
 
 import SwiftUI
 
+// MARK: - CheckoutView
+
 struct CheckoutView: View {
     @ObservedObject var order: Order
+
+    @State private var showingConfirmation = false
+    @State private var confirmationMessaage = ""
 
     var body: some View {
         ScrollView {
@@ -26,15 +31,51 @@ struct CheckoutView: View {
                     .font(.title)
 
                 Button("Place Order") {
-                    // Button Action Here
+                    Task {
+                        await placeOrder()
+                    }
                 }
                 .padding()
             }
         }
         .navigationTitle("Check Out")
         .navigationBarTitleDisplayMode(.inline)
+        .alert("Thank You!", isPresented: $showingConfirmation) {
+            Button("OK") {}
+        } message: {
+            Text(confirmationMessaage)
+        }
+    }
+
+    // MARK: Internal
+
+    func placeOrder() async {
+        // convert order object to JSON Data
+        guard let encoded = try? JSONEncoder().encode(order) else {
+            print("Failed to encode order")
+            return
+        }
+        // how to send the data
+        let url = URL(string: "https://reqres.in/api/cupcakes")!
+        var request = URLRequest(url: url)
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        //HTTP method: GET (read data) and POST (write data)
+        request.httpMethod = "POST"
+
+        // make network request
+        do {
+            let (data, _) = try await URLSession.shared.upload(for: request, from: encoded)
+            // run the request and process the reposnse
+            let decodedOrder = try JSONDecoder().decode(Order.self, from: data)
+            confirmationMessaage = "Your order for \(decodedOrder.quantity) \(Order.types[decodedOrder.type].lowercased()) cupcakes is on the way!"
+            showingConfirmation = true
+        } catch {
+            print("Checkout failed.")
+        }
     }
 }
+
+// MARK: - CheckoutView_Previews
 
 struct CheckoutView_Previews: PreviewProvider {
     static var previews: some View {

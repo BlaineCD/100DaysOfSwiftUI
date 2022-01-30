@@ -59,8 +59,8 @@
 			children = (
 				DFD32DC127A1BA40002013A1 /* Project_10_CupcakeCornerApp.swift */,
 				DFD32DC327A1BA40002013A1 /* ContentView.swift */,
-				DFF74EF827A3A26700CC5B51 /* CheckoutView.swift */,
 				DFF74EF627A3A08400CC5B51 /* AddressView.swift */,
+				DFF74EF827A3A26700CC5B51 /* CheckoutView.swift */,
 				DFF74EF427A39C4000CC5B51 /* Order.swift */,
 				DFD32DC527A1BA41002013A1 /* Assets.xcassets */,
 				DFD32DC727A1BA41002013A1 /* Preview Content */,
