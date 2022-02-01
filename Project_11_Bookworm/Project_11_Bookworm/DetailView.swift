@@ -30,7 +30,7 @@ struct DetailView: View {
                     .offset(x: -5, y: -5)
             }
 
-            Text(book.author ?? "Unknown Author")
+            Text("By: \(book.author ?? "Unknown Author")")
                 .font(.title)
                 .foregroundColor(.secondary)
 
@@ -39,6 +39,12 @@ struct DetailView: View {
 
             RatingView(rating: .constant(Int(book.rating)))
                 .font(.largeTitle)
+
+            //Challenge 3:
+            Text("Logged on: \(book.date?.formatted() ?? "Unknown")")
+                .font(.caption)
+                .foregroundColor(.secondary)
+                .padding()
         }
         .navigationTitle(book.title ?? "Unknown Title")
         .navigationBarTitleDisplayMode(.inline)
@@ -57,6 +63,8 @@ struct DetailView: View {
             }
         }
     }
+
+    // MARK: Internal
 
     func deleteBook() {
         moc.delete(book)
