@@ -52,7 +52,7 @@ struct AddBookView: View {
                 RatingView(rating: $rating)
 
             } header: {
-                Text("Write A Review:")
+                Text("Leave A Review:")
             }
 
             Section {
