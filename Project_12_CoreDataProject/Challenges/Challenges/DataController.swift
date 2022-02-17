@@ -1,6 +1,6 @@
 //
 //  DataController.swift
-//  Project_12_CoreDataProject
+//  Challenges
 //
 //  Created by Blaine Dannheisser on 2/15/22.
 //
@@ -9,7 +9,7 @@ import CoreData
 import Foundation
 
 class DataController: ObservableObject {
-    let container = NSPersistentContainer(name: "CoreDataProject")
+    let container = NSPersistentContainer(name: "Bookworm")
 
     init() {
         container.loadPersistentStores { NSEntityDescription, error in
@@ -19,4 +19,3 @@ class DataController: ObservableObject {
         }
     }
 }
-

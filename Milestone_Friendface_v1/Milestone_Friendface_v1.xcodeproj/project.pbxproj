@@ -7,26 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DFEC3FB227BC0777005B1802 /* Project_12_CoreDataProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEC3FB127BC0777005B1802 /* Project_12_CoreDataProjectApp.swift */; };
-		DFEC3FB427BC0777005B1802 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEC3FB327BC0777005B1802 /* ContentView.swift */; };
-		DFEC3FB627BC0778005B1802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFEC3FB527BC0778005B1802 /* Assets.xcassets */; };
-		DFEC3FB927BC0778005B1802 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFEC3FB827BC0778005B1802 /* Preview Assets.xcassets */; };
-		DFEC3FC027BC07AA005B1802 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEC3FBF27BC07AA005B1802 /* DataController.swift */; };
-		DFEC3FC327BC081A005B1802 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFEC3FC127BC081A005B1802 /* CoreDataProject.xcdatamodeld */; };
+		DF75396327BE9DE100D37851 /* Milestone_Friendface_v1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF75396227BE9DE100D37851 /* Milestone_Friendface_v1App.swift */; };
+		DF75396527BE9DE100D37851 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF75396427BE9DE100D37851 /* ContentView.swift */; };
+		DF75396727BE9DE200D37851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF75396627BE9DE200D37851 /* Assets.xcassets */; };
+		DF75396A27BE9DE200D37851 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF75396927BE9DE200D37851 /* Preview Assets.xcassets */; };
+		DF75397127BE9EEA00D37851 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF75397027BE9EEA00D37851 /* User.swift */; };
+		DF75397327BE9F3B00D37851 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF75397227BE9F3B00D37851 /* Friend.swift */; };
+		DF75397B27BECC0400D37851 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF75397A27BECC0400D37851 /* DetailView.swift */; };
+		DF75397D27BEECCE00D37851 /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF75397C27BEECCE00D37851 /* CustomViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DFEC3FAE27BC0777005B1802 /* Project_12_CoreDataProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project_12_CoreDataProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFEC3FB127BC0777005B1802 /* Project_12_CoreDataProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_12_CoreDataProjectApp.swift; sourceTree = "<group>"; };
-		DFEC3FB327BC0777005B1802 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		DFEC3FB527BC0778005B1802 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DFEC3FB827BC0778005B1802 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DFEC3FBF27BC07AA005B1802 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		DFEC3FC227BC081A005B1802 /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
+		DF75395F27BE9DE100D37851 /* Milestone_Friendface_v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Milestone_Friendface_v1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF75396227BE9DE100D37851 /* Milestone_Friendface_v1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milestone_Friendface_v1App.swift; sourceTree = "<group>"; };
+		DF75396427BE9DE100D37851 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DF75396627BE9DE200D37851 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF75396927BE9DE200D37851 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF75397027BE9EEA00D37851 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DF75397227BE9F3B00D37851 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		DF75397A27BECC0400D37851 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		DF75397C27BEECCE00D37851 /* CustomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DFEC3FAB27BC0777005B1802 /* Frameworks */ = {
+		DF75395C27BE9DE100D37851 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,39 +40,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DFEC3FA527BC0777005B1802 = {
+		DF75395627BE9DE100D37851 = {
 			isa = PBXGroup;
 			children = (
-				DFEC3FB027BC0777005B1802 /* Project_12_CoreDataProject */,
-				DFEC3FAF27BC0777005B1802 /* Products */,
+				DF75396127BE9DE100D37851 /* Milestone_Friendface_v1 */,
+				DF75396027BE9DE100D37851 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DFEC3FAF27BC0777005B1802 /* Products */ = {
+		DF75396027BE9DE100D37851 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DFEC3FAE27BC0777005B1802 /* Project_12_CoreDataProject.app */,
+				DF75395F27BE9DE100D37851 /* Milestone_Friendface_v1.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DFEC3FB027BC0777005B1802 /* Project_12_CoreDataProject */ = {
+		DF75396127BE9DE100D37851 /* Milestone_Friendface_v1 */ = {
 			isa = PBXGroup;
 			children = (
-				DFEC3FB127BC0777005B1802 /* Project_12_CoreDataProjectApp.swift */,
-				DFEC3FB327BC0777005B1802 /* ContentView.swift */,
-				DFEC3FBF27BC07AA005B1802 /* DataController.swift */,
-				DFEC3FC127BC081A005B1802 /* CoreDataProject.xcdatamodeld */,
-				DFEC3FB527BC0778005B1802 /* Assets.xcassets */,
-				DFEC3FB727BC0778005B1802 /* Preview Content */,
+				DF75396227BE9DE100D37851 /* Milestone_Friendface_v1App.swift */,
+				DF75396427BE9DE100D37851 /* ContentView.swift */,
+				DF75397A27BECC0400D37851 /* DetailView.swift */,
+				DF75397C27BEECCE00D37851 /* CustomViews.swift */,
+				DF75397027BE9EEA00D37851 /* User.swift */,
+				DF75397227BE9F3B00D37851 /* Friend.swift */,
+				DF75396627BE9DE200D37851 /* Assets.xcassets */,
+				DF75396827BE9DE200D37851 /* Preview Content */,
 			);
-			path = Project_12_CoreDataProject;
+			path = Milestone_Friendface_v1;
 			sourceTree = "<group>";
 		};
-		DFEC3FB727BC0778005B1802 /* Preview Content */ = {
+		DF75396827BE9DE200D37851 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				DFEC3FB827BC0778005B1802 /* Preview Assets.xcassets */,
+				DF75396927BE9DE200D37851 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -76,39 +82,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DFEC3FAD27BC0777005B1802 /* Project_12_CoreDataProject */ = {
+		DF75395E27BE9DE100D37851 /* Milestone_Friendface_v1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DFEC3FBC27BC0778005B1802 /* Build configuration list for PBXNativeTarget "Project_12_CoreDataProject" */;
+			buildConfigurationList = DF75396D27BE9DE200D37851 /* Build configuration list for PBXNativeTarget "Milestone_Friendface_v1" */;
 			buildPhases = (
-				DFEC3FAA27BC0777005B1802 /* Sources */,
-				DFEC3FAB27BC0777005B1802 /* Frameworks */,
-				DFEC3FAC27BC0777005B1802 /* Resources */,
+				DF75395B27BE9DE100D37851 /* Sources */,
+				DF75395C27BE9DE100D37851 /* Frameworks */,
+				DF75395D27BE9DE100D37851 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Project_12_CoreDataProject;
-			productName = Project_12_CoreDataProject;
-			productReference = DFEC3FAE27BC0777005B1802 /* Project_12_CoreDataProject.app */;
+			name = Milestone_Friendface_v1;
+			productName = Milestone_Friendface_v1;
+			productReference = DF75395F27BE9DE100D37851 /* Milestone_Friendface_v1.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DFEC3FA627BC0777005B1802 /* Project object */ = {
+		DF75395727BE9DE100D37851 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					DFEC3FAD27BC0777005B1802 = {
+					DF75395E27BE9DE100D37851 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = DFEC3FA927BC0777005B1802 /* Build configuration list for PBXProject "Project_12_CoreDataProject" */;
+			buildConfigurationList = DF75395A27BE9DE100D37851 /* Build configuration list for PBXProject "Milestone_Friendface_v1" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,44 +122,46 @@
 				en,
 				Base,
 			);
-			mainGroup = DFEC3FA527BC0777005B1802;
-			productRefGroup = DFEC3FAF27BC0777005B1802 /* Products */;
+			mainGroup = DF75395627BE9DE100D37851;
+			productRefGroup = DF75396027BE9DE100D37851 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DFEC3FAD27BC0777005B1802 /* Project_12_CoreDataProject */,
+				DF75395E27BE9DE100D37851 /* Milestone_Friendface_v1 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DFEC3FAC27BC0777005B1802 /* Resources */ = {
+		DF75395D27BE9DE100D37851 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFEC3FB927BC0778005B1802 /* Preview Assets.xcassets in Resources */,
-				DFEC3FB627BC0778005B1802 /* Assets.xcassets in Resources */,
+				DF75396A27BE9DE200D37851 /* Preview Assets.xcassets in Resources */,
+				DF75396727BE9DE200D37851 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DFEC3FAA27BC0777005B1802 /* Sources */ = {
+		DF75395B27BE9DE100D37851 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFEC3FB427BC0777005B1802 /* ContentView.swift in Sources */,
-				DFEC3FC027BC07AA005B1802 /* DataController.swift in Sources */,
-				DFEC3FC327BC081A005B1802 /* CoreDataProject.xcdatamodeld in Sources */,
-				DFEC3FB227BC0777005B1802 /* Project_12_CoreDataProjectApp.swift in Sources */,
+				DF75396527BE9DE100D37851 /* ContentView.swift in Sources */,
+				DF75396327BE9DE100D37851 /* Milestone_Friendface_v1App.swift in Sources */,
+				DF75397127BE9EEA00D37851 /* User.swift in Sources */,
+				DF75397D27BEECCE00D37851 /* CustomViews.swift in Sources */,
+				DF75397B27BECC0400D37851 /* DetailView.swift in Sources */,
+				DF75397327BE9F3B00D37851 /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		DFEC3FBA27BC0778005B1802 /* Debug */ = {
+		DF75396B27BE9DE200D37851 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -214,7 +222,7 @@
 			};
 			name = Debug;
 		};
-		DFEC3FBB27BC0778005B1802 /* Release */ = {
+		DF75396C27BE9DE200D37851 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -269,14 +277,14 @@
 			};
 			name = Release;
 		};
-		DFEC3FBD27BC0778005B1802 /* Debug */ = {
+		DF75396E27BE9DE200D37851 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Project_12_CoreDataProject/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Milestone_Friendface_v1/Preview Content\"";
 				DEVELOPMENT_TEAM = HQGUF324D5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -290,7 +298,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dannheisserdev.Project-12-CoreDataProject";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dannheisserdev.Milestone-Friendface-v1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -298,14 +306,14 @@
 			};
 			name = Debug;
 		};
-		DFEC3FBE27BC0778005B1802 /* Release */ = {
+		DF75396F27BE9DE200D37851 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Project_12_CoreDataProject/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Milestone_Friendface_v1/Preview Content\"";
 				DEVELOPMENT_TEAM = HQGUF324D5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -319,7 +327,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dannheisserdev.Project-12-CoreDataProject";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dannheisserdev.Milestone-Friendface-v1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -330,38 +338,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DFEC3FA927BC0777005B1802 /* Build configuration list for PBXProject "Project_12_CoreDataProject" */ = {
+		DF75395A27BE9DE100D37851 /* Build configuration list for PBXProject "Milestone_Friendface_v1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DFEC3FBA27BC0778005B1802 /* Debug */,
-				DFEC3FBB27BC0778005B1802 /* Release */,
+				DF75396B27BE9DE200D37851 /* Debug */,
+				DF75396C27BE9DE200D37851 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DFEC3FBC27BC0778005B1802 /* Build configuration list for PBXNativeTarget "Project_12_CoreDataProject" */ = {
+		DF75396D27BE9DE200D37851 /* Build configuration list for PBXNativeTarget "Milestone_Friendface_v1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DFEC3FBD27BC0778005B1802 /* Debug */,
-				DFEC3FBE27BC0778005B1802 /* Release */,
+				DF75396E27BE9DE200D37851 /* Debug */,
+				DF75396F27BE9DE200D37851 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		DFEC3FC127BC081A005B1802 /* CoreDataProject.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				DFEC3FC227BC081A005B1802 /* CoreDataProject.xcdatamodel */,
-			);
-			currentVersion = DFEC3FC227BC081A005B1802 /* CoreDataProject.xcdatamodel */;
-			path = CoreDataProject.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = DFEC3FA627BC0777005B1802 /* Project object */;
+	rootObject = DF75395727BE9DE100D37851 /* Project object */;
 }
