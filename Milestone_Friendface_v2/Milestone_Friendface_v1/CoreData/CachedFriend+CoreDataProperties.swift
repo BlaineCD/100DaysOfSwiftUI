@@ -24,7 +24,6 @@ extension CachedFriend {
         name ?? "Unknown Name"
     }
 
-
 }
 
 extension CachedFriend : Identifiable {
