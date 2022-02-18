@@ -68,9 +68,7 @@ struct AboutView: View {
             HStack {
                 Image(systemName: "envelope")
                     .font(.callout.bold())
-                Text(userEmail)
-                    .font(.body)
-                    .fontWeight(.semibold)
+                Link(userEmail, destination: URL(string: "mailto:\(userEmail)")!)
             }
             .padding(.bottom)
 
