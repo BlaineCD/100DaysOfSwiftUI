@@ -2,7 +2,7 @@
 //  CachedFriend+CoreDataProperties.swift
 //  Milestone_Friendface_v1
 //
-//  Created by Blaine Dannheisser on 2/17/22.
+//  Created by Blaine Dannheisser on 2/18/22.
 //
 //
 
@@ -18,10 +18,12 @@ extension CachedFriend {
 
     @NSManaged public var id: UUID?
     @NSManaged public var name: String?
+    @NSManaged public var user: CachedUser?
 
-    var wrappedName: String {
+    public var wrappedFriendName: String {
         name ?? "Unknown Name"
     }
+
 
 }
 

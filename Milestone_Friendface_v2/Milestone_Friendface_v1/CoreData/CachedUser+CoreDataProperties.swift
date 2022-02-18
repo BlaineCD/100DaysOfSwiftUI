@@ -2,7 +2,7 @@
 //  CachedUser+CoreDataProperties.swift
 //  Milestone_Friendface_v1
 //
-//  Created by Blaine Dannheisser on 2/17/22.
+//  Created by Blaine Dannheisser on 2/18/22.
 //
 //
 
@@ -27,31 +27,31 @@ extension CachedUser {
     @NSManaged public var about: String?
     @NSManaged public var friends: NSSet?
 
-    public var wrappedID: UUID {
+    var wrappedID: UUID {
         id ?? UUID()
     }
 
-    public var wrappedName: String {
+    var wrappedName: String {
         name ?? "Unknown Name"
     }
 
-    public var wrappedEmail: String {
+    var wrappedEmail: String {
         email ?? "No Email"
     }
 
-    public var wrappedAddress: String {
+    var wrappedAddress: String {
         address ?? "Unkonwn Address"
     }
 
-    public var wrappedRegistered: Date {
+     var wrappedRegistered: Date {
         registered ?? Date()
     }
 
-    public var wrappedCompany: String {
+    var wrappedCompany: String {
         company ?? "Unknown Company"
     }
 
-    public var wrappedAbout: String {
+    var wrappedAbout: String {
         about ?? ""
     }
 
@@ -59,9 +59,26 @@ extension CachedUser {
         let set = friends as? Set<CachedFriend> ?? []
 
         return set.sorted {
-            $0.wrappedName < $1.wrappedName
+            $0.wrappedFriendName < $1.wrappedFriendName
         }
     }
+}
+
+// MARK: Generated accessors for friends
+extension CachedUser {
+
+    @objc(addFriendsObject:)
+    @NSManaged public func addToFriends(_ value: CachedFriend)
+
+    @objc(removeFriendsObject:)
+    @NSManaged public func removeFromFriends(_ value: CachedFriend)
+
+    @objc(addFriends:)
+    @NSManaged public func addToFriends(_ values: NSSet)
+
+    @objc(removeFriends:)
+    @NSManaged public func removeFromFriends(_ values: NSSet)
+
 }
 
 extension CachedUser : Identifiable {
