@@ -11,6 +11,7 @@
 		DF5A5E6D27D00F1B00BD1E81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5A5E6C27D00F1B00BD1E81 /* ContentView.swift */; };
 		DF5A5E6F27D00F1B00BD1E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5A5E6E27D00F1B00BD1E81 /* Assets.xcassets */; };
 		DF5A5E7227D00F1B00BD1E81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5A5E7127D00F1B00BD1E81 /* Preview Assets.xcassets */; };
+		DF5A5E7927D07DA000BD1E81 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5A5E7827D07DA000BD1E81 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DF5A5E6C27D00F1B00BD1E81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF5A5E6E27D00F1B00BD1E81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF5A5E7127D00F1B00BD1E81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF5A5E7827D07DA000BD1E81 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				DF5A5E6A27D00F1B00BD1E81 /* Project_13_InstaFilterApp.swift */,
 				DF5A5E6C27D00F1B00BD1E81 /* ContentView.swift */,
+				DF5A5E7827D07DA000BD1E81 /* ImagePicker.swift */,
 				DF5A5E6E27D00F1B00BD1E81 /* Assets.xcassets */,
 				DF5A5E7027D00F1B00BD1E81 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF5A5E7927D07DA000BD1E81 /* ImagePicker.swift in Sources */,
 				DF5A5E6D27D00F1B00BD1E81 /* ContentView.swift in Sources */,
 				DF5A5E6B27D00F1B00BD1E81 /* Project_13_InstaFilterApp.swift in Sources */,
 			);
