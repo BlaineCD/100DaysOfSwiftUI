@@ -13,91 +13,85 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var image: Image?
-    @State private var inputImage: UIImage?
+    @State private var filterIntensity = 0.5
     @State private var showingImagePicker = false
+    @State private var inputImage: UIImage?
+    @State private var currentFilter = CIFilter.sepiaTone()
+    let context = CIContext()
 
     var body: some View {
-        VStack {
-            image?
-                .resizable()
-                .scaledToFit()
+        NavigationView {
+            VStack {
+                ZStack {
+                    Rectangle()
+                        .fill(.secondary)
+                    Text("Tap to select a picture")
+                        .font(.headline)
+                        .foregroundColor(.white)
 
-            Button("Select Image") {
-                showingImagePicker = true
+                    image?
+                        .resizable()
+                        .scaledToFit()
+                }
+                .onTapGesture {
+                    showingImagePicker.toggle()
+                }
+
+                HStack {
+                    Text("Intensity")
+                    Slider(value: $filterIntensity)
+                        .onChange(of: filterIntensity) { _ in applyProcessing() }
+                }
+                .padding(.vertical)
+
+                HStack {
+                    Button("Change Filter", action: changeFilter)
+
+                    Spacer()
+
+                    Button("Save", action: save)
+                }
+            }
+            .padding([.horizontal, .bottom])
+            .navigationTitle("InstaFilter")
+            .onChange(of: inputImage) { _ in loadImage() }
+            .sheet(isPresented: $showingImagePicker) {
+                ImagePicker(image: $inputImage)
             }
         }
-        .sheet(isPresented: $showingImagePicker) {
-            ImagePicker(image: $inputImage)
-        }
-        .onChange(of: inputImage) { _ in
-            loadImage()
-        }
     }
+
+    // MARK: Internal
 
     func loadImage() {
         guard let inputImage = inputImage else { return }
-        image = Image(uiImage: inputImage)
+        let beginImage = CIImage(image: inputImage)
+        currentFilter.setValue(beginImage, forKey: kCIInputImageKey)
+        applyProcessing()
+    }
+
+    func save() {}
+
+    func changeFilter() {}
+
+    func applyProcessing() {
+        currentFilter.intensity = Float(filterIntensity)
+
+        guard let outputImage = currentFilter.outputImage else { return }
+
+        if let cgimg = context.createCGImage(outputImage, from: outputImage.extent) {
+            let uiImage = UIImage(cgImage: cgimg)
+            image = Image(uiImage: uiImage)
+        }
     }
 }
 
-    // MARK: - ContentView_Previews
 
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-        }
+
+// MARK: - ContentView_Previews
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
-
-    //struct ContentView: View {
-    //    @State private var image: Image?
-    //
-    //    var body: some View {
-    //        VStack {
-    //            image?
-    //                .resizable()
-    //                .scaledToFit()
-    //        }
-    //        .onAppear(perform: loadImage)
-    //    }
-    //
-    //    // MARK: Internal
-    //
-    //    func loadImage() {
-    //        guard let inputImage = UIImage(named: "example") else { return }
-    //        let beginImage = CIImage(image: inputImage)
-    //
-    //        // Create Core Image Context and Core Image Filter
-    //        // Contexts handles converting processed data into a CGImage
-    //        let context = CIContext()
-    //
-    //        let currentFilter = CIFilter.twirlDistortion()
-    //        currentFilter.inputImage = beginImage
-    //
-    //        let amount = 1.0
-    //        let inputKeys = currentFilter.inputKeys
-    //
-    //        if inputKeys.contains(kCIInputIntensityKey) {
-    //            currentFilter.setValue(amount, forKey: kCIInputIntensityKey)
-    //        }
-    //
-    //        if inputKeys.contains(kCIInputRadiusKey) {
-    //            currentFilter.setValue(amount * 200, forKey: kCIInputRadiusKey)
-    //
-    //        }
-    //
-    //        if inputKeys.contains(kCIInputScaleKey) {
-    //            currentFilter.setValue(amount * 10, forKey: kCIInputScaleKey)
-    //        }
-    //
-    //        // Convert output from filter to SwiftUI Image
-    //        // 1) get at CIImage from our filter or exit if fails
-    //        guard let outputImage = currentFilter.outputImage else { return }
-    //        // 2) attempt to get a CGImage from our CIImage
-    //        if let cgimg = context.createCGImage(outputImage, from: outputImage.extent) {
-    //            // 3) convert that to a UIImage
-    //            let uiImage = UIImage(cgImage: cgimg)
-    //            // 4) convert to a swiftUI image
-    //            image = Image(uiImage: uiImage)
-    //        }
-    //    }
-    //}
+}

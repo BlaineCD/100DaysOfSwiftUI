@@ -9,13 +9,21 @@ import PhotosUI
 import SwiftUI
 
 struct ImagePicker: UIViewControllerRepresentable {
-    //nested to encapsulate functionality. Coordinator handles comms from the PHPickerViewController
+    @Binding var image: UIImage?
+
+    // MARK: Internal
+
+    // nested to encapsulate functionality. Coordinator handles comms from the PHPickerViewController
     class Coordinator: NSObject, PHPickerViewControllerDelegate {
         var parent: ImagePicker
+
+        // MARK: Lifecycle
 
         init(_ parent: ImagePicker) {
             self.parent = parent
         }
+
+        // MARK: Internal
 
         func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
             // dismiss the picker
@@ -29,10 +37,7 @@ struct ImagePicker: UIViewControllerRepresentable {
                 }
             }
         }
-
     }
-
-    @Binding var image: UIImage?
 
     func makeUIViewController(context: Context) -> PHPickerViewController {
         var config = PHPickerConfiguration()
