@@ -14,6 +14,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var image: Image?
     @State private var filterIntensity = 0.5
+    @State private var filterRadius = 5.5
     @State private var showingImagePicker = false
     @State private var inputImage: UIImage?
     @State private var processedImage: UIImage?
@@ -43,6 +44,13 @@ struct ContentView: View {
                     Slider(value: $filterIntensity)
                         .onChange(of: filterIntensity) { _ in applyProcessing() }
                 }
+
+                HStack {
+                    Text("Radius")
+                    Slider(value: $filterRadius)
+                        .onChange(of: filterRadius) { _ in applyProcessing() }
+                }
+
                 .padding(.vertical)
 
                 HStack {
@@ -53,6 +61,8 @@ struct ContentView: View {
                     Spacer()
 
                     Button("Save", action: save)
+                    // Challenge 1: Disable button if there is no image in the view:
+                        .disabled(image == nil)
                 }
             }
             .padding([.horizontal, .bottom])
@@ -62,13 +72,15 @@ struct ContentView: View {
                 ImagePicker(image: $inputImage)
             }
             .confirmationDialog("Select a Filter", isPresented: $showingFilterSheet) {
-                Button("Crystallize") { setFilter(CIFilter.crystallize())}
                 Button("Edges") { setFilter(CIFilter.edges())}
                 Button("Gaussian Blur") { setFilter(CIFilter.gaussianBlur())}
                 Button("Pixellate") { setFilter(CIFilter.pixellate())}
                 Button("Sepia Tone") { setFilter(CIFilter.sepiaTone())}
                 Button("Unsharp Mask") { setFilter(CIFilter.unsharpMask())}
                 Button("Vignette") { setFilter(CIFilter.vignette())}
+                Button("Invert") { setFilter(CIFilter.colorInvert())}
+                Button("Chrome") { setFilter(CIFilter.photoEffectChrome())}
+                Button("Circular Wrap") { setFilter(CIFilter.circularWrap())}
                 Button("Cancel", role: .cancel) {}
             }
         }
@@ -105,7 +117,7 @@ struct ContentView: View {
             currentFilter.setValue(filterIntensity, forKey: kCIInputIntensityKey)
         }
         if inputKeys.contains(kCIInputRadiusKey) {
-            currentFilter.setValue(filterIntensity * 200, forKey: kCIInputRadiusKey)
+            currentFilter.setValue(filterRadius * 100, forKey: kCIInputRadiusKey)
         }
         if inputKeys.contains(kCIInputScaleKey) {
             currentFilter.setValue(filterIntensity * 10, forKey: kCIInputScaleKey)
