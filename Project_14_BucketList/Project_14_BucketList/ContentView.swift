@@ -8,6 +8,8 @@
 import MapKit
 import SwiftUI
 
+// MARK: - ContentView
+
 struct ContentView: View {
 
     @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 43.13343, longitude: 11.76721), span: MKCoordinateSpan(latitudeDelta: 20, longitudeDelta: 20))
@@ -42,7 +44,6 @@ struct ContentView: View {
                 .opacity(0.4)
                 .frame(width: 44, height: 44)
 
-
             VStack {
                 Spacer()
 
@@ -73,6 +74,8 @@ struct ContentView: View {
         }
     }
 }
+
+// MARK: - ContentView_Previews
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

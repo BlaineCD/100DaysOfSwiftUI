@@ -11,6 +11,7 @@
 		DF2B5DC127D707ED00F51C5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B5DC027D707ED00F51C5B /* ContentView.swift */; };
 		DF2B5DC327D707EE00F51C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2B5DC227D707EE00F51C5B /* Assets.xcassets */; };
 		DF2B5DC627D707EE00F51C5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2B5DC527D707EE00F51C5B /* Preview Assets.xcassets */; };
+		DF38902027DADFB400B8D118 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF38901F27DADFB400B8D118 /* Result.swift */; };
 		DF5CEC6127D9AADE00999AC6 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5CEC6027D9AADE00999AC6 /* Location.swift */; };
 		DF5CEC6327DA88AB00999AC6 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5CEC6227DA88AB00999AC6 /* EditView.swift */; };
 /* End PBXBuildFile section */
@@ -21,6 +22,7 @@
 		DF2B5DC027D707ED00F51C5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF2B5DC227D707EE00F51C5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF2B5DC527D707EE00F51C5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF38901F27DADFB400B8D118 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		DF5CEC6027D9AADE00999AC6 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		DF5CEC6227DA88AB00999AC6 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +59,7 @@
 			children = (
 				DF2B5DBE27D707ED00F51C5B /* Project_14_BucketListApp.swift */,
 				DF2B5DC027D707ED00F51C5B /* ContentView.swift */,
+				DF38901F27DADFB400B8D118 /* Result.swift */,
 				DF5CEC6227DA88AB00999AC6 /* EditView.swift */,
 				DF5CEC6027D9AADE00999AC6 /* Location.swift */,
 				DF2B5DC227D707EE00F51C5B /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF2B5DC127D707ED00F51C5B /* ContentView.swift in Sources */,
+				DF38902027DADFB400B8D118 /* Result.swift in Sources */,
 				DF5CEC6127D9AADE00999AC6 /* Location.swift in Sources */,
 				DF5CEC6327DA88AB00999AC6 /* EditView.swift in Sources */,
 				DF2B5DBF27D707ED00F51C5B /* Project_14_BucketListApp.swift in Sources */,

@@ -5,8 +5,8 @@
 //  Created by Blaine Dannheisser on 3/9/22.
 //
 
-import Foundation
 import CoreLocation
+import Foundation
 
 struct Location: Identifiable, Equatable, Codable {
     var id: UUID
@@ -19,9 +19,12 @@ struct Location: Identifiable, Equatable, Codable {
         CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
 
-    static func ==(lhs: Location, rhs: Location) -> Bool {
+    static var example = Location(id: UUID(), name: "Follonico", description: "Tuscan getaway", latitude: 43.13343, longitude: 11.76721)
+
+    // MARK: Internal
+
+    static func == (lhs: Location, rhs: Location) -> Bool {
         lhs.id == rhs.id
     }
 
-    static var example = Location(id: UUID(), name: "Follonico", description: "Tuscan getaway", latitude: 43.13343, longitude: 11.76721)
 }
