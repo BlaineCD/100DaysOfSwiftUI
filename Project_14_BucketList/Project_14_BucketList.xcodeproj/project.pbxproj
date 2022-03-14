@@ -16,6 +16,7 @@
 		DF38902227DBB6CD00B8D118 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF38902127DBB6CD00B8D118 /* ContentView-ViewModel.swift */; };
 		DF5CEC6127D9AADE00999AC6 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5CEC6027D9AADE00999AC6 /* Location.swift */; };
 		DF5CEC6327DA88AB00999AC6 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5CEC6227DA88AB00999AC6 /* EditView.swift */; };
+		DFA7776827DF8BE2005BB3C5 /* EditView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA7776727DF8BE2005BB3C5 /* EditView-ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		DF38902127DBB6CD00B8D118 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
 		DF5CEC6027D9AADE00999AC6 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		DF5CEC6227DA88AB00999AC6 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		DFA7776727DF8BE2005BB3C5 /* EditView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditView-ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				DF26A5CD27DBFCFA004D9ED5 /* FileManager-DocumentsDirectory.swift */,
 				DF38901F27DADFB400B8D118 /* Result.swift */,
 				DF5CEC6227DA88AB00999AC6 /* EditView.swift */,
+				DFA7776727DF8BE2005BB3C5 /* EditView-ViewModel.swift */,
 				DF5CEC6027D9AADE00999AC6 /* Location.swift */,
 				DF2B5DC227D707EE00F51C5B /* Assets.xcassets */,
 				DF2B5DC427D707EE00F51C5B /* Preview Content */,
@@ -157,6 +160,7 @@
 				DF38902227DBB6CD00B8D118 /* ContentView-ViewModel.swift in Sources */,
 				DF38902027DADFB400B8D118 /* Result.swift in Sources */,
 				DF5CEC6127D9AADE00999AC6 /* Location.swift in Sources */,
+				DFA7776827DF8BE2005BB3C5 /* EditView-ViewModel.swift in Sources */,
 				DF5CEC6327DA88AB00999AC6 /* EditView.swift in Sources */,
 				DF2B5DBF27D707ED00F51C5B /* Project_14_BucketListApp.swift in Sources */,
 			);
