@@ -7,22 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF26A5CE27DBFCFA004D9ED5 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF26A5CD27DBFCFA004D9ED5 /* FileManager-DocumentsDirectory.swift */; };
 		DF2B5DBF27D707ED00F51C5B /* Project_14_BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B5DBE27D707ED00F51C5B /* Project_14_BucketListApp.swift */; };
 		DF2B5DC127D707ED00F51C5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B5DC027D707ED00F51C5B /* ContentView.swift */; };
 		DF2B5DC327D707EE00F51C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2B5DC227D707EE00F51C5B /* Assets.xcassets */; };
 		DF2B5DC627D707EE00F51C5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2B5DC527D707EE00F51C5B /* Preview Assets.xcassets */; };
 		DF38902027DADFB400B8D118 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF38901F27DADFB400B8D118 /* Result.swift */; };
+		DF38902227DBB6CD00B8D118 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF38902127DBB6CD00B8D118 /* ContentView-ViewModel.swift */; };
 		DF5CEC6127D9AADE00999AC6 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5CEC6027D9AADE00999AC6 /* Location.swift */; };
 		DF5CEC6327DA88AB00999AC6 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5CEC6227DA88AB00999AC6 /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF26A5CD27DBFCFA004D9ED5 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
 		DF2B5DBB27D707ED00F51C5B /* Project_14_BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project_14_BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2B5DBE27D707ED00F51C5B /* Project_14_BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_14_BucketListApp.swift; sourceTree = "<group>"; };
 		DF2B5DC027D707ED00F51C5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF2B5DC227D707EE00F51C5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF2B5DC527D707EE00F51C5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF38901F27DADFB400B8D118 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		DF38902127DBB6CD00B8D118 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
 		DF5CEC6027D9AADE00999AC6 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		DF5CEC6227DA88AB00999AC6 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,7 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				DF2B5DBE27D707ED00F51C5B /* Project_14_BucketListApp.swift */,
+				DF38902127DBB6CD00B8D118 /* ContentView-ViewModel.swift */,
 				DF2B5DC027D707ED00F51C5B /* ContentView.swift */,
+				DF26A5CD27DBFCFA004D9ED5 /* FileManager-DocumentsDirectory.swift */,
 				DF38901F27DADFB400B8D118 /* Result.swift */,
 				DF5CEC6227DA88AB00999AC6 /* EditView.swift */,
 				DF5CEC6027D9AADE00999AC6 /* Location.swift */,
@@ -147,6 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF2B5DC127D707ED00F51C5B /* ContentView.swift in Sources */,
+				DF26A5CE27DBFCFA004D9ED5 /* FileManager-DocumentsDirectory.swift in Sources */,
+				DF38902227DBB6CD00B8D118 /* ContentView-ViewModel.swift in Sources */,
 				DF38902027DADFB400B8D118 /* Result.swift in Sources */,
 				DF5CEC6127D9AADE00999AC6 /* Location.swift in Sources */,
 				DF5CEC6327DA88AB00999AC6 /* EditView.swift in Sources */,
@@ -284,6 +292,7 @@
 				DEVELOPMENT_TEAM = HQGUF324D5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Authentication required to view your places.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -313,6 +322,7 @@
 				DEVELOPMENT_TEAM = HQGUF324D5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Authentication required to view your places.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
