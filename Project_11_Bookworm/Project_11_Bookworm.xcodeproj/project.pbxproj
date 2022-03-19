@@ -65,12 +65,12 @@
 			isa = PBXGroup;
 			children = (
 				DF13E2A627A64E5700F74B99 /* Project_11_BookwormApp.swift */,
+				DF13E30027AAEB8700F74B99 /* DataController.swift */,
 				DF13E2A827A64E5700F74B99 /* ContentView.swift */,
 				DF13E2B927A8DB8900F74B99 /* AddBookView.swift */,
 				DF13E2BF27A9A04D00F74B99 /* DetailView.swift */,
 				DF13E2BB27A8E48600F74B99 /* RatingView.swift */,
 				DF13E2BD27A8E87600F74B99 /* EmojiRatingView.swift */,
-				DF13E30027AAEB8700F74B99 /* DataController.swift */,
 				DF13E2AA27A64E5800F74B99 /* Assets.xcassets */,
 				DF13E2AC27A64E5800F74B99 /* Preview Content */,
 			);

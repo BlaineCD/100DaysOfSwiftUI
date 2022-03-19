@@ -7,28 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DF9B527527E1987700AABCE7 /* Milestone_05_NameReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9B527427E1987700AABCE7 /* Milestone_05_NameReminderApp.swift */; };
-		DF9B527727E1987700AABCE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9B527627E1987700AABCE7 /* ContentView.swift */; };
-		DF9B527927E1987900AABCE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF9B527827E1987900AABCE7 /* Assets.xcassets */; };
-		DF9B527C27E1987900AABCE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF9B527B27E1987900AABCE7 /* Preview Assets.xcassets */; };
-		DF9B528327E252A000AABCE7 /* AddPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9B528227E252A000AABCE7 /* AddPersonView.swift */; };
-		DF9B528527E2533400AABCE7 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9B528427E2533400AABCE7 /* Person.swift */; };
-		DF9B528927E28D0100AABCE7 /* FileManager-Documents.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9B528827E28D0100AABCE7 /* FileManager-Documents.swift */; };
+		DF93E48227E3DA6B00859820 /* Person.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF93E48027E3DA6B00859820 /* Person.xcdatamodeld */; };
+		DF93E48427E3DAE000859820 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF93E48327E3DAE000859820 /* DataController.swift */; };
+		DF93E48627E41E4F00859820 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF93E48527E41E4F00859820 /* ImagePicker.swift */; };
+		DF93E48827E4DE0500859820 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF93E48727E4DE0500859820 /* DetailView.swift */; };
+		DF9F7CBC27E2DFBF00D6DCDC /* Milestone_05_NameAndFaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9F7CBB27E2DFBF00D6DCDC /* Milestone_05_NameAndFaceApp.swift */; };
+		DF9F7CBE27E2DFBF00D6DCDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9F7CBD27E2DFBF00D6DCDC /* ContentView.swift */; };
+		DF9F7CC027E2DFC000D6DCDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF9F7CBF27E2DFC000D6DCDC /* Assets.xcassets */; };
+		DF9F7CC327E2DFC000D6DCDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF9F7CC227E2DFC000D6DCDC /* Preview Assets.xcassets */; };
+		DF9F7CCA27E2E16500D6DCDC /* AddFriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9F7CC927E2E16400D6DCDC /* AddFriendView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DF9B527127E1987700AABCE7 /* Milestone_05_NameReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Milestone_05_NameReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF9B527427E1987700AABCE7 /* Milestone_05_NameReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milestone_05_NameReminderApp.swift; sourceTree = "<group>"; };
-		DF9B527627E1987700AABCE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		DF9B527827E1987900AABCE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DF9B527B27E1987900AABCE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DF9B528227E252A000AABCE7 /* AddPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonView.swift; sourceTree = "<group>"; };
-		DF9B528427E2533400AABCE7 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		DF9B528827E28D0100AABCE7 /* FileManager-Documents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-Documents.swift"; sourceTree = "<group>"; };
+		DF93E48127E3DA6B00859820 /* Person.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Person.xcdatamodel; sourceTree = "<group>"; };
+		DF93E48327E3DAE000859820 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		DF93E48527E41E4F00859820 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		DF93E48727E4DE0500859820 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		DF9F7CB827E2DFBF00D6DCDC /* Milestone_05_NameAndFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Milestone_05_NameAndFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF9F7CBB27E2DFBF00D6DCDC /* Milestone_05_NameAndFaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milestone_05_NameAndFaceApp.swift; sourceTree = "<group>"; };
+		DF9F7CBD27E2DFBF00D6DCDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DF9F7CBF27E2DFC000D6DCDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF9F7CC227E2DFC000D6DCDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF9F7CC927E2E16400D6DCDC /* AddFriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DF9B526E27E1987700AABCE7 /* Frameworks */ = {
+		DF9F7CB527E2DFBF00D6DCDC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,40 +42,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DF9B526827E1987700AABCE7 = {
+		DF93E48927E53D4400859820 /* VIews */ = {
 			isa = PBXGroup;
 			children = (
-				DF9B527327E1987700AABCE7 /* Milestone_05_NameReminder */,
-				DF9B527227E1987700AABCE7 /* Products */,
+				DF9F7CBD27E2DFBF00D6DCDC /* ContentView.swift */,
+				DF9F7CC927E2E16400D6DCDC /* AddFriendView.swift */,
+				DF93E48727E4DE0500859820 /* DetailView.swift */,
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
+		DF93E48A27E53D4A00859820 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF93E48327E3DAE000859820 /* DataController.swift */,
+				DF93E48527E41E4F00859820 /* ImagePicker.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DF9F7CAF27E2DFBF00D6DCDC = {
+			isa = PBXGroup;
+			children = (
+				DF9F7CBA27E2DFBF00D6DCDC /* Milestone_05_NameAndFace */,
+				DF9F7CB927E2DFBF00D6DCDC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DF9B527227E1987700AABCE7 /* Products */ = {
+		DF9F7CB927E2DFBF00D6DCDC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DF9B527127E1987700AABCE7 /* Milestone_05_NameReminder.app */,
+				DF9F7CB827E2DFBF00D6DCDC /* Milestone_05_NameAndFace.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DF9B527327E1987700AABCE7 /* Milestone_05_NameReminder */ = {
+		DF9F7CBA27E2DFBF00D6DCDC /* Milestone_05_NameAndFace */ = {
 			isa = PBXGroup;
 			children = (
-				DF9B527427E1987700AABCE7 /* Milestone_05_NameReminderApp.swift */,
-				DF9B527627E1987700AABCE7 /* ContentView.swift */,
-				DF9B528827E28D0100AABCE7 /* FileManager-Documents.swift */,
-				DF9B528227E252A000AABCE7 /* AddPersonView.swift */,
-				DF9B528427E2533400AABCE7 /* Person.swift */,
-				DF9B527827E1987900AABCE7 /* Assets.xcassets */,
-				DF9B527A27E1987900AABCE7 /* Preview Content */,
+				DF93E48027E3DA6B00859820 /* Person.xcdatamodeld */,
+				DF9F7CBB27E2DFBF00D6DCDC /* Milestone_05_NameAndFaceApp.swift */,
+				DF93E48927E53D4400859820 /* VIews */,
+				DF93E48A27E53D4A00859820 /* Models */,
+				DF9F7CBF27E2DFC000D6DCDC /* Assets.xcassets */,
+				DF9F7CC127E2DFC000D6DCDC /* Preview Content */,
 			);
-			path = Milestone_05_NameReminder;
+			path = Milestone_05_NameAndFace;
 			sourceTree = "<group>";
 		};
-		DF9B527A27E1987900AABCE7 /* Preview Content */ = {
+		DF9F7CC127E2DFC000D6DCDC /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				DF9B527B27E1987900AABCE7 /* Preview Assets.xcassets */,
+				DF9F7CC227E2DFC000D6DCDC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -79,39 +101,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DF9B527027E1987700AABCE7 /* Milestone_05_NameReminder */ = {
+		DF9F7CB727E2DFBF00D6DCDC /* Milestone_05_NameAndFace */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DF9B527F27E1987900AABCE7 /* Build configuration list for PBXNativeTarget "Milestone_05_NameReminder" */;
+			buildConfigurationList = DF9F7CC627E2DFC000D6DCDC /* Build configuration list for PBXNativeTarget "Milestone_05_NameAndFace" */;
 			buildPhases = (
-				DF9B526D27E1987700AABCE7 /* Sources */,
-				DF9B526E27E1987700AABCE7 /* Frameworks */,
-				DF9B526F27E1987700AABCE7 /* Resources */,
+				DF9F7CB427E2DFBF00D6DCDC /* Sources */,
+				DF9F7CB527E2DFBF00D6DCDC /* Frameworks */,
+				DF9F7CB627E2DFBF00D6DCDC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Milestone_05_NameReminder;
-			productName = Milestone_05_NameReminder;
-			productReference = DF9B527127E1987700AABCE7 /* Milestone_05_NameReminder.app */;
+			name = Milestone_05_NameAndFace;
+			productName = Milestone_05_NameAndFace;
+			productReference = DF9F7CB827E2DFBF00D6DCDC /* Milestone_05_NameAndFace.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DF9B526927E1987700AABCE7 /* Project object */ = {
+		DF9F7CB027E2DFBF00D6DCDC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					DF9B527027E1987700AABCE7 = {
+					DF9F7CB727E2DFBF00D6DCDC = {
 						CreatedOnToolsVersion = 13.3;
 					};
 				};
 			};
-			buildConfigurationList = DF9B526C27E1987700AABCE7 /* Build configuration list for PBXProject "Milestone_05_NameReminder" */;
+			buildConfigurationList = DF9F7CB327E2DFBF00D6DCDC /* Build configuration list for PBXProject "Milestone_05_NameAndFace" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,45 +141,47 @@
 				en,
 				Base,
 			);
-			mainGroup = DF9B526827E1987700AABCE7;
-			productRefGroup = DF9B527227E1987700AABCE7 /* Products */;
+			mainGroup = DF9F7CAF27E2DFBF00D6DCDC;
+			productRefGroup = DF9F7CB927E2DFBF00D6DCDC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DF9B527027E1987700AABCE7 /* Milestone_05_NameReminder */,
+				DF9F7CB727E2DFBF00D6DCDC /* Milestone_05_NameAndFace */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DF9B526F27E1987700AABCE7 /* Resources */ = {
+		DF9F7CB627E2DFBF00D6DCDC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF9B527C27E1987900AABCE7 /* Preview Assets.xcassets in Resources */,
-				DF9B527927E1987900AABCE7 /* Assets.xcassets in Resources */,
+				DF9F7CC327E2DFC000D6DCDC /* Preview Assets.xcassets in Resources */,
+				DF9F7CC027E2DFC000D6DCDC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DF9B526D27E1987700AABCE7 /* Sources */ = {
+		DF9F7CB427E2DFBF00D6DCDC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF9B528927E28D0100AABCE7 /* FileManager-Documents.swift in Sources */,
-				DF9B527727E1987700AABCE7 /* ContentView.swift in Sources */,
-				DF9B527527E1987700AABCE7 /* Milestone_05_NameReminderApp.swift in Sources */,
-				DF9B528527E2533400AABCE7 /* Person.swift in Sources */,
-				DF9B528327E252A000AABCE7 /* AddPersonView.swift in Sources */,
+				DF93E48427E3DAE000859820 /* DataController.swift in Sources */,
+				DF9F7CCA27E2E16500D6DCDC /* AddFriendView.swift in Sources */,
+				DF9F7CBE27E2DFBF00D6DCDC /* ContentView.swift in Sources */,
+				DF93E48827E4DE0500859820 /* DetailView.swift in Sources */,
+				DF93E48627E41E4F00859820 /* ImagePicker.swift in Sources */,
+				DF93E48227E3DA6B00859820 /* Person.xcdatamodeld in Sources */,
+				DF9F7CBC27E2DFBF00D6DCDC /* Milestone_05_NameAndFaceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		DF9B527D27E1987900AABCE7 /* Debug */ = {
+		DF9F7CC427E2DFC000D6DCDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -217,7 +241,7 @@
 			};
 			name = Debug;
 		};
-		DF9B527E27E1987900AABCE7 /* Release */ = {
+		DF9F7CC527E2DFC000D6DCDC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -271,17 +295,18 @@
 			};
 			name = Release;
 		};
-		DF9B528027E1987900AABCE7 /* Debug */ = {
+		DF9F7CC727E2DFC000D6DCDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Milestone_05_NameReminder/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Milestone_05_NameAndFace/Preview Content\"";
 				DEVELOPMENT_TEAM = HQGUF324D5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Allow app to save photo to your library?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -292,7 +317,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dannheisserdev.Milestone-05-NameReminder";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dannheisserdev.Milestone-05-NameAndFace";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -300,17 +325,18 @@
 			};
 			name = Debug;
 		};
-		DF9B528127E1987900AABCE7 /* Release */ = {
+		DF9F7CC827E2DFC000D6DCDC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Milestone_05_NameReminder/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Milestone_05_NameAndFace/Preview Content\"";
 				DEVELOPMENT_TEAM = HQGUF324D5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Allow app to save photo to your library?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -321,7 +347,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dannheisserdev.Milestone-05-NameReminder";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dannheisserdev.Milestone-05-NameAndFace";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -332,25 +358,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DF9B526C27E1987700AABCE7 /* Build configuration list for PBXProject "Milestone_05_NameReminder" */ = {
+		DF9F7CB327E2DFBF00D6DCDC /* Build configuration list for PBXProject "Milestone_05_NameAndFace" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DF9B527D27E1987900AABCE7 /* Debug */,
-				DF9B527E27E1987900AABCE7 /* Release */,
+				DF9F7CC427E2DFC000D6DCDC /* Debug */,
+				DF9F7CC527E2DFC000D6DCDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DF9B527F27E1987900AABCE7 /* Build configuration list for PBXNativeTarget "Milestone_05_NameReminder" */ = {
+		DF9F7CC627E2DFC000D6DCDC /* Build configuration list for PBXNativeTarget "Milestone_05_NameAndFace" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DF9B528027E1987900AABCE7 /* Debug */,
-				DF9B528127E1987900AABCE7 /* Release */,
+				DF9F7CC727E2DFC000D6DCDC /* Debug */,
+				DF9F7CC827E2DFC000D6DCDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DF93E48027E3DA6B00859820 /* Person.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DF93E48127E3DA6B00859820 /* Person.xcdatamodel */,
+			);
+			currentVersion = DF93E48127E3DA6B00859820 /* Person.xcdatamodel */;
+			path = Person.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = DF9B526927E1987700AABCE7 /* Project object */;
+	rootObject = DF9F7CB027E2DFBF00D6DCDC /* Project object */;
 }
