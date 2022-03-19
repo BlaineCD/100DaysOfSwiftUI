@@ -36,7 +36,7 @@ struct DetailView: View {
                     Text(person.title ?? "Spirtual Leader")
                 }
                 Section("Employer") {
-                    Text(person.employer ?? "Apple")
+                    Text(person.employer ?? "The Buddha")
                 }
                 Section("Notes") {
                     Text(person.notes ?? "Went to the same university")
@@ -66,8 +66,9 @@ struct DetailView: View {
     }
 
     func deleteContact() {
-        moc.delete(person)
-        try? moc.save()
+//        moc.delete(person)
+//        try? moc.save()
+        print("DELETE")
         dismiss()
     }
 }

@@ -75,15 +75,13 @@ struct AddFriendView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
-                        let convertedImage = inputImage?.jpegData(compressionQuality: 0.80)
-
                         let newPerson = Person(context: moc)
                         newPerson.id = UUID()
                         newPerson.name = name
                         newPerson.title = title
                         newPerson.employer = employer
                         newPerson.notes = notes
-                        newPerson.photo = convertedImage
+                        newPerson.photo = inputImage?.jpegData(compressionQuality: 0.80)
 
                         try? moc.save()
                         dismiss()
