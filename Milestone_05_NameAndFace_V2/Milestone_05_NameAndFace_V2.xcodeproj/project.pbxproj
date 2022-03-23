@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DF2F27F327E96EBE008BB8F7 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F27F227E96EBE008BB8F7 /* LocationFetcher.swift */; };
-		DF2F27F627E974ED008BB8F7 /* Friend+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F27F427E974ED008BB8F7 /* Friend+CoreDataClass.swift */; };
-		DF2F27F727E974ED008BB8F7 /* Friend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F27F527E974ED008BB8F7 /* Friend+CoreDataProperties.swift */; };
+		DF2F27FF27EA74D8008BB8F7 /* Friend+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F27FD27EA74D8008BB8F7 /* Friend+CoreDataClass.swift */; };
+		DF2F280027EA74D8008BB8F7 /* Friend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F27FE27EA74D8008BB8F7 /* Friend+CoreDataProperties.swift */; };
 		DF4A5D6127E669FA0080D2D8 /* Milestone_05_NameAndFace_V2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4A5D6027E669FA0080D2D8 /* Milestone_05_NameAndFace_V2App.swift */; };
 		DF4A5D6327E669FA0080D2D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4A5D6227E669FA0080D2D8 /* ContentView.swift */; };
 		DF4A5D6527E669FB0080D2D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF4A5D6427E669FB0080D2D8 /* Assets.xcassets */; };
@@ -23,8 +23,8 @@
 
 /* Begin PBXFileReference section */
 		DF2F27F227E96EBE008BB8F7 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
-		DF2F27F427E974ED008BB8F7 /* Friend+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Friend+CoreDataClass.swift"; path = "Milestone_05_NameAndFace_V2/Friend+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DF2F27F527E974ED008BB8F7 /* Friend+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Friend+CoreDataProperties.swift"; path = "Milestone_05_NameAndFace_V2/Friend+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DF2F27FD27EA74D8008BB8F7 /* Friend+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DF2F27FE27EA74D8008BB8F7 /* Friend+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DF4A5D5D27E669FA0080D2D8 /* Milestone_05_NameAndFace_V2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Milestone_05_NameAndFace_V2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF4A5D6027E669FA0080D2D8 /* Milestone_05_NameAndFace_V2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milestone_05_NameAndFace_V2App.swift; sourceTree = "<group>"; };
 		DF4A5D6227E669FA0080D2D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +35,7 @@
 		DF4A5D7727E66AE60080D2D8 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		DF4A5D7D27E670220080D2D8 /* AddFriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendView.swift; sourceTree = "<group>"; };
 		DF4A5D7F27E6D1BC0080D2D8 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		DFD5354827EAC91A0087BBE2 /* Milestone-05-NameAndFace-V2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Milestone-05-NameAndFace-V2-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,11 +49,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF2F27F827EA2A77008BB8F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF4A5D6227E669FA0080D2D8 /* ContentView.swift */,
+				DF4A5D7D27E670220080D2D8 /* AddFriendView.swift */,
+				DF4A5D6E27E66A180080D2D8 /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DF2F27F927EA2A7B008BB8F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF4A5D7F27E6D1BC0080D2D8 /* PhotoPicker.swift */,
+				DF2F27F227E96EBE008BB8F7 /* LocationFetcher.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DF2F27FA27EA2A80008BB8F7 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				DF2F27FD27EA74D8008BB8F7 /* Friend+CoreDataClass.swift */,
+				DF2F27FE27EA74D8008BB8F7 /* Friend+CoreDataProperties.swift */,
+				DF4A5D7027E66A380080D2D8 /* Friend.xcdatamodeld */,
+				DF4A5D7727E66AE60080D2D8 /* DataController.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
 		DF4A5D5427E669FA0080D2D8 = {
 			isa = PBXGroup;
 			children = (
-				DF2F27F427E974ED008BB8F7 /* Friend+CoreDataClass.swift */,
-				DF2F27F527E974ED008BB8F7 /* Friend+CoreDataProperties.swift */,
 				DF4A5D5F27E669FA0080D2D8 /* Milestone_05_NameAndFace_V2 */,
 				DF4A5D5E27E669FA0080D2D8 /* Products */,
 			);
@@ -69,14 +98,11 @@
 		DF4A5D5F27E669FA0080D2D8 /* Milestone_05_NameAndFace_V2 */ = {
 			isa = PBXGroup;
 			children = (
+				DFD5354827EAC91A0087BBE2 /* Milestone-05-NameAndFace-V2-Info.plist */,
 				DF4A5D6027E669FA0080D2D8 /* Milestone_05_NameAndFace_V2App.swift */,
-				DF4A5D7727E66AE60080D2D8 /* DataController.swift */,
-				DF4A5D6227E669FA0080D2D8 /* ContentView.swift */,
-				DF4A5D7D27E670220080D2D8 /* AddFriendView.swift */,
-				DF4A5D6E27E66A180080D2D8 /* DetailView.swift */,
-				DF2F27F227E96EBE008BB8F7 /* LocationFetcher.swift */,
-				DF4A5D7F27E6D1BC0080D2D8 /* PhotoPicker.swift */,
-				DF4A5D7027E66A380080D2D8 /* Friend.xcdatamodeld */,
+				DF2F27F827EA2A77008BB8F7 /* Views */,
+				DF2F27F927EA2A7B008BB8F7 /* Models */,
+				DF2F27FA27EA2A80008BB8F7 /* Core Data */,
 				DF4A5D6427E669FB0080D2D8 /* Assets.xcassets */,
 				DF4A5D6627E669FB0080D2D8 /* Preview Content */,
 			);
@@ -162,13 +188,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF4A5D7827E66AE60080D2D8 /* DataController.swift in Sources */,
+				DF2F27FF27EA74D8008BB8F7 /* Friend+CoreDataClass.swift in Sources */,
+				DF2F280027EA74D8008BB8F7 /* Friend+CoreDataProperties.swift in Sources */,
 				DF2F27F327E96EBE008BB8F7 /* LocationFetcher.swift in Sources */,
 				DF4A5D8027E6D1BC0080D2D8 /* PhotoPicker.swift in Sources */,
 				DF4A5D7E27E670220080D2D8 /* AddFriendView.swift in Sources */,
-				DF2F27F627E974ED008BB8F7 /* Friend+CoreDataClass.swift in Sources */,
 				DF4A5D6327E669FA0080D2D8 /* ContentView.swift in Sources */,
 				DF4A5D6F27E66A180080D2D8 /* DetailView.swift in Sources */,
-				DF2F27F727E974ED008BB8F7 /* Friend+CoreDataProperties.swift in Sources */,
 				DF4A5D6127E669FA0080D2D8 /* Milestone_05_NameAndFace_V2App.swift in Sources */,
 				DF4A5D7227E66A380080D2D8 /* Friend.xcdatamodeld in Sources */,
 			);
@@ -302,7 +328,8 @@
 				DEVELOPMENT_TEAM = HQGUF324D5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to show the location of your photo.";
+				INFOPLIST_FILE = "Milestone-05-NameAndFace-V2-Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow this app to track the location where you were added.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -332,7 +359,8 @@
 				DEVELOPMENT_TEAM = HQGUF324D5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to show the location of your photo.";
+				INFOPLIST_FILE = "Milestone-05-NameAndFace-V2-Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow this app to track the location where you were added.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

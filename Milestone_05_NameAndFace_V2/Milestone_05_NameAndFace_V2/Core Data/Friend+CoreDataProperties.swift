@@ -2,13 +2,14 @@
 //  Friend+CoreDataProperties.swift
 //  Milestone_05_NameAndFace_V2
 //
-//  Created by Blaine Dannheisser on 3/21/22.
+//  Created by Blaine Dannheisser on 3/22/22.
 //
 //
 
 import Foundation
 import CoreData
 import MapKit
+
 
 extension Friend {
 
@@ -21,6 +22,7 @@ extension Friend {
     @NSManaged public var photo: Data?
     @NSManaged public var latitude: Double
     @NSManaged public var longitude: Double
+    @NSManaged public var favorite: Bool
 
     public var wrappedName: String {
         name ?? "Melquiades"

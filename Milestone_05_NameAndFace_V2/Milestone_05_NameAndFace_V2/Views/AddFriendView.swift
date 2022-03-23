@@ -15,6 +15,7 @@ struct AddFriendView: View {
     let locationFetcher = LocationFetcher()
 
     @State private var name = ""
+    @State private var isFavorite = false
     @State private var latitude = 84.99135153345317
     @State private var longitude = 84.99135153345317
     @State private var photo: Image?
@@ -50,23 +51,18 @@ struct AddFriendView: View {
                 }
                 .onTapGesture {
                     isShowingPhotoPicker = true
+                    self.locationFetcher.start()
                 }
 
                 TextField("Name...", text: $name)
                     .padding()
                     .textFieldStyle(.roundedBorder)
-                    .padding(.bottom)
+
+                Toggle("Add Favorite?", isOn: $isFavorite)
+                    .padding()
+                    .tint(.blue)
 
                 Button("Track Location") {
-                    self.locationFetcher.start()
-                }
-                .padding()
-                .background(.blue)
-                .foregroundColor(.white)
-                .font(.headline.bold())
-                .cornerRadius(15)
-
-                Button("Read Location") {
                     if let location = self.locationFetcher.lastKnownLocation {
                         latitude = location.latitude
                         longitude = location.longitude
@@ -75,54 +71,56 @@ struct AddFriendView: View {
                         print("Your location is unknown")
                     }
                 }
-            .padding()
-            .background(.blue)
-            .foregroundColor(.white)
-            .font(.headline.bold())
-            .cornerRadius(15)
+                .padding()
+                .background(.blue)
+                .foregroundColor(.white)
+                .font(.headline.bold())
+                .cornerRadius(15)
 
-            Spacer()
-        }
-        .onChange(of: inputPhoto, perform: { newValue in
-            loadPhoto()
-        })
-        .sheet(isPresented: $isShowingPhotoPicker) {
-            ImagePicker(photo: $inputPhoto)
-        }
-        .navigationTitle("Add Friend")
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                Button("Cancel") { dismiss() }
+                Spacer()
             }
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button("Save") {
-                    saveFriend()
-                    dismiss()
+            .onChange(of: inputPhoto, perform: { newValue in
+                loadPhoto()
+            })
+            .sheet(isPresented: $isShowingPhotoPicker) {
+                ImagePicker(photo: $inputPhoto)
+            }
+            .navigationTitle("Add Friend")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button("Cancel") { dismiss() }
                 }
-                .disabled(hasValidEntry == true)
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Save") {
+                        saveFriend()
+                        dismiss()
+                    }
+                    .disabled(hasValidEntry == true)
+                }
             }
         }
     }
+
+    func loadPhoto() {
+        guard let inputPhoto = inputPhoto else { return }
+        photo = Image(uiImage: inputPhoto)
     }
 
-func loadPhoto() {
-    guard let inputPhoto = inputPhoto else { return }
-    photo = Image(uiImage: inputPhoto)
-}
+    func saveFriend() {
+        guard let savedPhoto = inputPhoto?.jpegData(compressionQuality: 0.80) else { return }
 
-func saveFriend() {
-    guard let savedPhoto = inputPhoto?.jpegData(compressionQuality: 0.80) else { return }
-
-    let newFriend = Friend(context: moc)
-    newFriend.id = UUID()
-    newFriend.name = name
-    newFriend.photo = savedPhoto
-    newFriend.latitude = latitude
-    newFriend.longitude = longitude
-    try? moc.save()
+        let newFriend = Friend(context: moc)
+        newFriend.id = UUID()
+        newFriend.name = name
+        newFriend.favorite = isFavorite
+        newFriend.photo = savedPhoto
+        newFriend.latitude = latitude
+        newFriend.longitude = longitude
+        try? moc.save()
     }
 }
+
 
 //struct AddFriendView_Previews: PreviewProvider {
 //    static var previews: some View {
