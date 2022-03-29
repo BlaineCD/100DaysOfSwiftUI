@@ -44,6 +44,7 @@ struct AddFriendView: View {
 
                     photo?
                         .resizable()
+                        .scaledToFill()
                         .frame(width: 220, height: 220)
                         .clipShape(Circle())
                         .overlay(Circle().stroke(.blue, lineWidth: 4))

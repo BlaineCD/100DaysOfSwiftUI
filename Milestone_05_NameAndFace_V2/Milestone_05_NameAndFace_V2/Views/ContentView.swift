@@ -28,6 +28,7 @@ struct ContentView: View {
                                 NavigationLink {
                                     DetailView(friend: friend)
                                 } label: {
+                                    VStack {
                                     if friend.favorite == true {
                                         Image(uiImage: UIImage(data: friend.photo!)!)
                                             .resizable()
@@ -35,7 +36,11 @@ struct ContentView: View {
                                             .frame(width: 60, height: 60)
                                             .clipShape(Circle())
                                             .overlay(Circle().stroke(.blue, lineWidth: 4))
-                                            .padding()
+                                            .padding([.trailing, .leading, .top])
+                                        Text(friend.wrappedName)
+                                            .font(.caption)
+                                            .foregroundColor(.black)
+                                        }
                                     }
                                 }
                             }

@@ -71,9 +71,9 @@
 		DF2F27FA27EA2A80008BB8F7 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				DF4A5D7027E66A380080D2D8 /* Friend.xcdatamodeld */,
 				DF2F27FD27EA74D8008BB8F7 /* Friend+CoreDataClass.swift */,
 				DF2F27FE27EA74D8008BB8F7 /* Friend+CoreDataProperties.swift */,
-				DF4A5D7027E66A380080D2D8 /* Friend.xcdatamodeld */,
 				DF4A5D7727E66AE60080D2D8 /* DataController.swift */,
 			);
 			path = "Core Data";
