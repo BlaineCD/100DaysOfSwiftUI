@@ -11,6 +11,7 @@
 		DF57980727EE58D70042B944 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF57980627EE58D70042B944 /* MeView.swift */; };
 		DF57980927EEA9EC0042B944 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF57980827EEA9EC0042B944 /* Prospect.swift */; };
 		DF57980C27F1485A0042B944 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = DF57980B27F1485A0042B944 /* CodeScanner */; };
+		DF57980E27F3E8CE0042B944 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF57980D27F3E8CE0042B944 /* ImageSaver.swift */; };
 		DFD5355627EAD5520087BBE2 /* Project_16_HotProspectsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5355527EAD5520087BBE2 /* Project_16_HotProspectsApp.swift */; };
 		DFD5355827EAD5520087BBE2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5355727EAD5520087BBE2 /* ContentView.swift */; };
 		DFD5355A27EAD5540087BBE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFD5355927EAD5540087BBE2 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		DF57980427EE58CF0042B944 /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
 		DF57980627EE58D70042B944 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 		DF57980827EEA9EC0042B944 /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
+		DF57980D27F3E8CE0042B944 /* ImageSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageSaver.swift; path = ../../Project_13_InstaFilter/Project_13_InstaFilter/ImageSaver.swift; sourceTree = "<group>"; };
 		DFD5355227EAD5520087BBE2 /* Project_16_HotProspects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project_16_HotProspects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFD5355527EAD5520087BBE2 /* Project_16_HotProspectsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_16_HotProspectsApp.swift; sourceTree = "<group>"; };
 		DFD5355727EAD5520087BBE2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				DFD5355727EAD5520087BBE2 /* ContentView.swift */,
 				DF57980427EE58CF0042B944 /* ProspectsView.swift */,
 				DF57980827EEA9EC0042B944 /* Prospect.swift */,
+				DF57980D27F3E8CE0042B944 /* ImageSaver.swift */,
 				DF57980627EE58D70042B944 /* MeView.swift */,
 				DFD5355927EAD5540087BBE2 /* Assets.xcassets */,
 				DFD5355B27EAD5540087BBE2 /* Preview Content */,
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF57980727EE58D70042B944 /* MeView.swift in Sources */,
+				DF57980E27F3E8CE0042B944 /* ImageSaver.swift in Sources */,
 				DF57980927EEA9EC0042B944 /* Prospect.swift in Sources */,
 				DF57980527EE58CF0042B944 /* ProspectsView.swift in Sources */,
 				DFD5355827EAD5520087BBE2 /* ContentView.swift in Sources */,
@@ -291,6 +295,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to the camera in order to scan QR codes.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Allow Hot Prospects to save QR Code to your photo libary.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -321,6 +326,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to the camera in order to scan QR codes.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Allow Hot Prospects to save QR Code to your photo libary.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
