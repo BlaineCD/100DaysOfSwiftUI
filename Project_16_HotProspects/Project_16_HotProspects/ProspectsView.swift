@@ -17,22 +17,37 @@ struct ProspectsView: View {
         case none, contacted, uncontacted
     }
 
+    enum SortType {
+        case name, date
+    }
+
     // 3a) We want all instances of Prospects View to read that object back out of the enviornment when they are created. Find the object, attach to a prperty, and keep it up to date over time.
     @EnvironmentObject var prospects: Prospects
 
     @State private var isShowingScanner = false
+    @State private var showingConfirmation = false
+    @State private var sorting = SortType.date
+
 
     let filter: Filtertype
 
     var body: some View {
         NavigationView {
             List {
-                ForEach(filteredProspects) { prospect in
-                    VStack(alignment: .leading) {
-                        Text(prospect.name)
-                            .font(.headline)
-                        Text(prospect.emailAddress)
-                            .foregroundColor(.secondary)
+                // Challenge 3: Use a confirmation dialog to customize users are sorted in each tab.
+                ForEach(filteredProspects.sorted {
+                    sorting == .name ? ($0.name < $1.name) : ($0.dateAdded < $1.dateAdded ) }) { prospect in
+                    //Challenge 1: Add icon to "Everyone Screen" showing whether they have been contacted or not
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text(prospect.name)
+                                .font(.headline)
+                            Text(prospect.emailAddress)
+                                .foregroundColor(.secondary)
+                        }
+                        Spacer()
+
+                        prospect.isContacted ? Image(systemName: "checkmark.circle") : Image(systemName: "")
                     }
                     .swipeActions {
                         if prospect.isContacted {
@@ -60,14 +75,27 @@ struct ProspectsView: View {
                     }
                 }
             }
+            .confirmationDialog("Sort Option", isPresented: $showingConfirmation) {
+                Button("By Name") { sorting = .name }
+                Button("By Date Added") { sorting = .date }
+            }
             .navigationTitle(title)
             .toolbar {
-                Button {
-                    isShowingScanner = true
-                } label: {
-                    Label("Scan", systemImage: "qrcode.viewfinder")
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        showingConfirmation.toggle()
+                    } label: {
+                        Label("Sort", systemImage: "arrow.up.arrow.down.square")
+                    }
                 }
-            }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                        Button {
+                            isShowingScanner = true
+                        } label: {
+                            Label("Scan", systemImage: "qrcode.viewfinder")
+                        }
+                    }
+                }
             .sheet(isPresented: $isShowingScanner) {
                 CodeScannerView(codeTypes: [.qr], simulatedData: "Monk\nmonk@us.gov", completion: handleScan)
             }
@@ -123,7 +151,7 @@ struct ProspectsView: View {
 
             var dateComponents = DateComponents()
             dateComponents.hour = 9
-//            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+            //            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
             let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
 
             let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
