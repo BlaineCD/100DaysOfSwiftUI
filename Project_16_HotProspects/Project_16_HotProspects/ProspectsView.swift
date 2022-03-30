@@ -13,23 +13,23 @@ import UserNotifications
 
 struct ProspectsView: View {
 
+    // 3a) We want all instances of Prospects View to read that object back out of the enviornment when they are created. Find the object, attach to a prperty, and keep it up to date over time.
+    @EnvironmentObject var prospects: Prospects
+
     enum Filtertype {
         case none, contacted, uncontacted
     }
+
+    let filter: Filtertype
 
     enum SortType {
         case name, date
     }
 
-    // 3a) We want all instances of Prospects View to read that object back out of the enviornment when they are created. Find the object, attach to a prperty, and keep it up to date over time.
-    @EnvironmentObject var prospects: Prospects
+    @State private var sorting = SortType.date
 
     @State private var isShowingScanner = false
     @State private var showingConfirmation = false
-    @State private var sorting = SortType.date
-
-
-    let filter: Filtertype
 
     var body: some View {
         NavigationView {
@@ -47,7 +47,7 @@ struct ProspectsView: View {
                         }
                         Spacer()
 
-                        prospect.isContacted ? Image(systemName: "checkmark.circle") : Image(systemName: "")
+                        prospect.isContacted ? Image(systemName: "person.crop.circle.fill.badge.checkmark") : Image(systemName: "person.fill.xmark")
                     }
                     .swipeActions {
                         if prospect.isContacted {

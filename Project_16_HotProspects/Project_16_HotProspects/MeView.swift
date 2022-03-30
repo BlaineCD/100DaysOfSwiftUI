@@ -11,8 +11,8 @@ import SwiftUI
 
 struct MeView: View {
 
-    @State private var name = "Anonymous"
-    @State private var emailAddress = "you@ursite.com"
+    @State private var name = ""
+    @State private var emailAddress = ""
     @State private var qrCode = UIImage()
 
     let context = CIContext()
@@ -31,7 +31,7 @@ struct MeView: View {
                     .resizable()
                     .interpolation(.none)
                     .scaledToFit()
-                    .frame(width: 200, height: 200)
+                    .frame(width: 150, height: 150)
                     .contextMenu {
                         Button {
                             let imageSaver = ImageSaver()
@@ -39,7 +39,6 @@ struct MeView: View {
                         } label: {
                             Label("Save to Photos", systemImage: "square.and.arrow.down")
                         }
-
                     }
             }
             .navigationTitle("Your Code")
