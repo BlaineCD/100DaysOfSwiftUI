@@ -11,5 +11,5 @@ struct Card {
     let prompt: String
     let answer: String
 
-    static let example = Card(prompt: "What is the captiol of Georgia?", answer: "Atlanta")
+    static let example = Card(prompt: "Who coined the term 'rock n' roll?", answer: "Alan Freed")
 }
