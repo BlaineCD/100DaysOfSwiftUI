@@ -13,6 +13,7 @@
 		DF57982527F545EE0042B944 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF57982427F545EE0042B944 /* Preview Assets.xcassets */; };
 		DF57982C27F60D2D0042B944 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF57982B27F60D2D0042B944 /* Card.swift */; };
 		DF57982E27F60DA40042B944 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF57982D27F60DA40042B944 /* CardView.swift */; };
+		DFC3748D27F7FAF40033A10E /* EditCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC3748C27F7FAF40033A10E /* EditCards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		DF57982427F545EE0042B944 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF57982B27F60D2D0042B944 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		DF57982D27F60DA40042B944 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		DFC3748C27F7FAF40033A10E /* EditCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				DF57981D27F545EC0042B944 /* Project_17_FlashzillaApp.swift */,
 				DF57981F27F545EC0042B944 /* ContentView.swift */,
 				DF57982B27F60D2D0042B944 /* Card.swift */,
+				DFC3748C27F7FAF40033A10E /* EditCards.swift */,
 				DF57982D27F60DA40042B944 /* CardView.swift */,
 				DF57982127F545EE0042B944 /* Assets.xcassets */,
 				DF57982327F545EE0042B944 /* Preview Content */,
@@ -146,6 +149,7 @@
 				DF57982027F545EC0042B944 /* ContentView.swift in Sources */,
 				DF57982C27F60D2D0042B944 /* Card.swift in Sources */,
 				DF57982E27F60DA40042B944 /* CardView.swift in Sources */,
+				DFC3748D27F7FAF40033A10E /* EditCards.swift in Sources */,
 				DF57981E27F545EC0042B944 /* Project_17_FlashzillaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
