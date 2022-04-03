@@ -13,6 +13,8 @@
 		DF57982527F545EE0042B944 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF57982427F545EE0042B944 /* Preview Assets.xcassets */; };
 		DF57982C27F60D2D0042B944 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF57982B27F60D2D0042B944 /* Card.swift */; };
 		DF57982E27F60DA40042B944 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF57982D27F60DA40042B944 /* CardView.swift */; };
+		DF967AEB27F9FA0300285043 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF967AEA27F9FA0300285043 /* FileManager-DocumentsDirectory.swift */; };
+		DF967AED27F9FA9700285043 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF967AEC27F9FA9700285043 /* DataManager.swift */; };
 		DFC3748D27F7FAF40033A10E /* EditCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC3748C27F7FAF40033A10E /* EditCards.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +26,8 @@
 		DF57982427F545EE0042B944 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF57982B27F60D2D0042B944 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		DF57982D27F60DA40042B944 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		DF967AEA27F9FA0300285043 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
+		DF967AEC27F9FA9700285043 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		DFC3748C27F7FAF40033A10E /* EditCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +63,8 @@
 			children = (
 				DF57981D27F545EC0042B944 /* Project_17_FlashzillaApp.swift */,
 				DF57981F27F545EC0042B944 /* ContentView.swift */,
+				DF967AEA27F9FA0300285043 /* FileManager-DocumentsDirectory.swift */,
+				DF967AEC27F9FA9700285043 /* DataManager.swift */,
 				DF57982B27F60D2D0042B944 /* Card.swift */,
 				DFC3748C27F7FAF40033A10E /* EditCards.swift */,
 				DF57982D27F60DA40042B944 /* CardView.swift */,
@@ -146,8 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF967AEB27F9FA0300285043 /* FileManager-DocumentsDirectory.swift in Sources */,
 				DF57982027F545EC0042B944 /* ContentView.swift in Sources */,
 				DF57982C27F60D2D0042B944 /* Card.swift in Sources */,
+				DF967AED27F9FA9700285043 /* DataManager.swift in Sources */,
 				DF57982E27F60DA40042B944 /* CardView.swift in Sources */,
 				DFC3748D27F7FAF40033A10E /* EditCards.swift in Sources */,
 				DF57981E27F545EC0042B944 /* Project_17_FlashzillaApp.swift in Sources */,
