@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct CardView: View {
     @Environment(\.accessibilityDifferentiateWithoutColor) var differentiateWithoutColor
     @Environment(\.accessibilityVoiceOverEnabled) var voiceOverEnabled
@@ -30,7 +29,7 @@ struct CardView: View {
                     differentiateWithoutColor
                     ? nil
                     : RoundedRectangle(cornerRadius: 25, style: .continuous)
-                        .fill(offset.width > 0 ? .green : .red)
+                        .fill(offset)
                 )
                 .shadow(radius: 10)
             VStack {
@@ -79,6 +78,19 @@ struct CardView: View {
             isShowingAnswer.toggle()
         }
         .animation(.spring(), value: offset)
+    }
+}
+
+//Challenge 2:
+extension Shape {
+    func fill(_ offset: CGSize) -> some View {
+        if offset == .zero {
+            return self.fill(.white)
+        } else if offset.width < 0 {
+            return self.fill(.red)
+        } else {
+            return self.fill(.green)
+        }
     }
 }
 

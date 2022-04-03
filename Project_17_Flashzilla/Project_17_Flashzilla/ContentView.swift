@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    @Environment(\.accessibilityDifferentiateWithoutColor) var differentiateWithoutColor
-    @Environment(\.accessibilityVoiceOverEnabled) var voiceOverEnabled
-    @Environment(\.scenePhase) var scenePhase
     @State private var isActive = true
     @State private var cards = [Card]()
+
+    @Environment(\.accessibilityDifferentiateWithoutColor) var differentiateWithoutColor
+    @Environment(\.accessibilityVoiceOverEnabled) var voiceOverEnabled
+
+    @Environment(\.scenePhase) var scenePhase
 
     @State private var timeRemaining = 100
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
