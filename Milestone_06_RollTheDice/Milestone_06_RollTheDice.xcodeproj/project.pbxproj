@@ -11,7 +11,9 @@
 		DF967B1D27FBF7ED00285043 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF967B1C27FBF7ED00285043 /* ContentView.swift */; };
 		DF967B1F27FBF7EF00285043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF967B1E27FBF7EF00285043 /* Assets.xcassets */; };
 		DF967B2227FBF7EF00285043 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF967B2127FBF7EF00285043 /* Preview Assets.xcassets */; };
-		DF967B2927FBFA7D00285043 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF967B2827FBFA7D00285043 /* SettingsView.swift */; };
+		DF967B4527FC9D9700285043 /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF967B4427FC9D9700285043 /* Dice.swift */; };
+		DF967B4727FCE87900285043 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF967B4627FCE87900285043 /* FileManager-DocumentsDirectory.swift */; };
+		DF967B4927FCEC7C00285043 /* RollHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF967B4827FCEC7C00285043 /* RollHistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +22,9 @@
 		DF967B1C27FBF7ED00285043 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF967B1E27FBF7EF00285043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF967B2127FBF7EF00285043 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DF967B2827FBFA7D00285043 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DF967B4427FC9D9700285043 /* Dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
+		DF967B4627FCE87900285043 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
+		DF967B4827FCEC7C00285043 /* RollHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollHistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			children = (
 				DF967B1A27FBF7ED00285043 /* Milestone_06_RollTheDiceApp.swift */,
 				DF967B1C27FBF7ED00285043 /* ContentView.swift */,
-				DF967B2827FBFA7D00285043 /* SettingsView.swift */,
+				DF967B4827FCEC7C00285043 /* RollHistoryView.swift */,
+				DF967B4627FCE87900285043 /* FileManager-DocumentsDirectory.swift */,
+				DF967B4427FC9D9700285043 /* Dice.swift */,
 				DF967B1E27FBF7EF00285043 /* Assets.xcassets */,
 				DF967B2027FBF7EF00285043 /* Preview Content */,
 			);
@@ -140,8 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF967B2927FBFA7D00285043 /* SettingsView.swift in Sources */,
+				DF967B4927FCEC7C00285043 /* RollHistoryView.swift in Sources */,
 				DF967B1D27FBF7ED00285043 /* ContentView.swift in Sources */,
+				DF967B4527FC9D9700285043 /* Dice.swift in Sources */,
+				DF967B4727FCE87900285043 /* FileManager-DocumentsDirectory.swift in Sources */,
 				DF967B1B27FBF7ED00285043 /* Milestone_06_RollTheDiceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
