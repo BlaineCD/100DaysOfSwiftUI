@@ -66,8 +66,8 @@
 				DF967AEA27F9FA0300285043 /* FileManager-DocumentsDirectory.swift */,
 				DF967AEC27F9FA9700285043 /* DataManager.swift */,
 				DF57982B27F60D2D0042B944 /* Card.swift */,
-				DFC3748C27F7FAF40033A10E /* EditCards.swift */,
 				DF57982D27F60DA40042B944 /* CardView.swift */,
+				DFC3748C27F7FAF40033A10E /* EditCards.swift */,
 				DF57982127F545EE0042B944 /* Assets.xcassets */,
 				DF57982327F545EE0042B944 /* Preview Content */,
 			);

@@ -23,13 +23,12 @@ struct ContentView: View {
     @State private var feedback = UIImpactFeedbackGenerator(style: .rigid)
 
     let columns: [GridItem] = [
-        .init(.adaptive(minimum: 100))
+        .init(.adaptive(minimum: 40))
     ]
 
     let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedRolls.json")
-    @State var savedResults = [Dice]()
 
-    @State private var isShowingPastRolls = false
+    @State private var savedResults = [Dice]()
 
     var body: some View {
         NavigationView {
@@ -90,27 +89,30 @@ struct ContentView: View {
                             .shadow(color: .black, radius: 3.0, x: 0.7, y: 1.0)
                     }
                 }
+
                 .padding()
+
+                if savedResults.isEmpty == false {
+                    List {
+                        Section("Roll History") {
+                            ForEach(savedResults) { result in
+                                VStack(alignment: .leading) {
+                                    Text("\(result.number) x \(result.type)")
+                                        .font(.headline)
+                                    Text(result.rolls.map(String.init).joined(separator: ", "))
+                                }
+                            }
+                        }
+                    }
+                }
             }
+
 
             .onAppear(perform: load)
 
             .onReceive(timer) { date in
                 updateDice()
             }
-
-            // Nav Bar
-            .toolbar {
-                Button {
-                    isShowingPastRolls.toggle()
-                } label: {
-                    Image(systemName: "clock.arrow.circlepath")
-                }
-            }
-
-            .sheet(isPresented: $isShowingPastRolls, content: {
-                RollHistoryView()
-            })
 
             .confirmationDialog("Select dice type:", isPresented: $showDiceTypeSelection) {
                 Button("4 Sided") { selectedDiceType = 4 }

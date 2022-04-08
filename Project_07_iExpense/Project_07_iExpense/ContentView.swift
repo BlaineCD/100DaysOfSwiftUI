@@ -17,13 +17,12 @@ struct ContentView: View {
         NavigationView {
             List {
                 Section("Expenses: Personal") {
-                    /// \.id not necessary as Expenses is Identifiable. See notes in file.
                     ForEach(expenses.items.filter({ $0.type == "Personal"})) { item in
                         HStack {
                             VStack(alignment: .leading) {
                                 Text(item.name)
                                     .fontWeight(.bold)
-                                Image(systemName: "person")
+                                Text("\(item.date, format: Date.FormatStyle().day().month().year())")
                             }
                             Spacer()
                             Text("\(item.amount, format: .currency(code: Locale.current.currencyCode ?? "USD"))")
@@ -34,7 +33,6 @@ struct ContentView: View {
                     .onDelete(perform: removeRows)
                 }
                 Section("Expenses: Personal") {
-                    /// \.id not necessary as Expenses is Identifiable. See notes in file.
                     ForEach(expenses.items.filter({ $0.type == "Business"})) { item in
                         HStack {
                             VStack(alignment: .leading) {
@@ -56,7 +54,7 @@ struct ContentView: View {
                 Button {
                     showingAddExpense.toggle()
                 } label: {
-                    Image(systemName: "plus")
+                    Label("Add Expense", systemImage: "dollarsign.circle")
                 }
             }
             .sheet(isPresented: $showingAddExpense) {

@@ -10,13 +10,13 @@ import SwiftUI
 struct ContentView: View {
     let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
     let missions: [Mission] = Bundle.main.decode("missions.json")
-    
+
+    @State private var listView = false
+
     let columns = [
         GridItem(.adaptive(minimum: 150))
     ]
-    
-    @State private var listView = false
-    
+
     var body: some View {
         VStack {
             NavigationView {

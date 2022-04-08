@@ -73,6 +73,7 @@ struct ContentView: View {
 
     func addNewWord() {
         let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
+
         guard !answer.isEmpty else { return }
 
         guard isOriginal(word: answer) else {
@@ -109,13 +110,11 @@ struct ContentView: View {
         newWord = ""
     }
 
-    // Word Validation Methods
-    // Validation (1)
+    // Validation Methods:
     func isOriginal(word: String) -> Bool {
         !usedWords.contains(word)
     }
 
-    // Validation (2)
     func isPossible(word: String) -> Bool {
         var tempWord = rootWord
 
@@ -129,7 +128,6 @@ struct ContentView: View {
         return true
     }
 
-    // Validation (3)
     func isReal(word: String) -> Bool {
         let checker = UITextChecker()
         let range = NSRange(location: 0, length: word.utf16.count)
@@ -138,7 +136,6 @@ struct ContentView: View {
         return misspelledRange.location == NSNotFound
     }
 
-    // Validation (4) Challenge
     func isTooShort(word: String) -> Bool {
         word.count > 2
     }

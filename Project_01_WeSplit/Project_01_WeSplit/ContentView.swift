@@ -33,7 +33,6 @@ struct ContentView: View {
     var totalPerPerson: Double {
         let peopleCount = Double(numberOfPeople + 1)
         let amountPerPerson = totalPlusTip / peopleCount
-
         return amountPerPerson
     }
 
