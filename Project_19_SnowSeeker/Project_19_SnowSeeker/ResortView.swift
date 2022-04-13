@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// MARK: - ResortView
+
 struct ResortView: View {
     let resort: Resort
     @Environment(\.horizontalSizeClass) var sizeClass
@@ -23,7 +25,7 @@ struct ResortView: View {
                 Image(decorative: resort.id)
                     .resizable()
                     .scaledToFill()
-                // Challenge 1:
+                    // Challenge 1:
                     .overlay {
                         Text("Photo Credit: \(resort.imageCredit)")
                             .font(.caption)
@@ -40,8 +42,8 @@ struct ResortView: View {
                         VStack(spacing: 10) { SkiDetailsView(resort: resort) }
                         VStack(spacing: 10) { ResortDetailsView(resort: resort) }
                     } else {
-                    SkiDetailsView(resort: resort)
-                    ResortDetailsView(resort: resort)
+                        SkiDetailsView(resort: resort)
+                        ResortDetailsView(resort: resort)
                     }
                 }
                 .padding(.vertical)
@@ -60,8 +62,8 @@ struct ResortView: View {
                                 selectedFacility = facility
                                 showingFacility.toggle()
                             } label: {
-                            facility.icon
-                                .font(.title)
+                                facility.icon
+                                    .font(.title)
                             }
                         }
                     }
@@ -77,10 +79,10 @@ struct ResortView: View {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
                     if favorites.contains(resort) {
-                           favorites.remove(resort)
-                       } else {
-                           favorites.add(resort)
-                       }
+                        favorites.remove(resort)
+                    } else {
+                        favorites.add(resort)
+                    }
                 } label: {
                     Image(systemName: favorites.contains(resort) ? "heart.fill" : "heart")
                 }
@@ -93,6 +95,8 @@ struct ResortView: View {
         }
     }
 }
+
+// MARK: - ResortView_Previews
 
 struct ResortView_Previews: PreviewProvider {
     static var previews: some View {
