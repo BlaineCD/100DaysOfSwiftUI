@@ -66,9 +66,9 @@ struct ContentView: View {
                 }
             }
             .confirmationDialog("Sort by...", isPresented: $showSorting) {
-                Button("By resort name") {sortingStatus = .alphabetical}
-                Button("By country name") {sortingStatus = .country }
-                Button("Default order") {sortingStatus = .normal}
+                Button("By resort name") { sortingStatus = .alphabetical }
+                Button("By country name") { sortingStatus = .country }
+                Button("Default order") { sortingStatus = .normal }
             }
 
             .searchable(text: $searchText, prompt: "Search for a resort")
