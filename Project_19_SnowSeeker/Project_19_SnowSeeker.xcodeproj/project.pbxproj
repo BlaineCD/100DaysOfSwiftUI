@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF3AFC0A2805291400A43E91 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3AFC092805291400A43E91 /* FileManager-DocumentsDirectory.swift */; };
 		DF6E439D27FFD218006CE880 /* Project_19_SnowSeekerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E439C27FFD218006CE880 /* Project_19_SnowSeekerApp.swift */; };
 		DF6E439F27FFD218006CE880 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E439E27FFD218006CE880 /* ContentView.swift */; };
 		DF6E43A127FFD219006CE880 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF6E43A027FFD219006CE880 /* Assets.xcassets */; };
@@ -18,9 +19,12 @@
 		DF6E43B328011C48006CE880 /* ResortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E43B228011C48006CE880 /* ResortView.swift */; };
 		DF6E43B528012368006CE880 /* SkiDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E43B428012368006CE880 /* SkiDetailsView.swift */; };
 		DF6E43B728012468006CE880 /* ResortDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E43B628012468006CE880 /* ResortDetailsView.swift */; };
+		DF6E43B928050D81006CE880 /* Facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E43B828050D81006CE880 /* Facility.swift */; };
+		DF6E43BB280513ED006CE880 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E43BA280513ED006CE880 /* Favorites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF3AFC092805291400A43E91 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
 		DF6E439927FFD218006CE880 /* Project_19_SnowSeeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project_19_SnowSeeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6E439C27FFD218006CE880 /* Project_19_SnowSeekerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_19_SnowSeekerApp.swift; sourceTree = "<group>"; };
 		DF6E439E27FFD218006CE880 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +37,8 @@
 		DF6E43B228011C48006CE880 /* ResortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortView.swift; sourceTree = "<group>"; };
 		DF6E43B428012368006CE880 /* SkiDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiDetailsView.swift; sourceTree = "<group>"; };
 		DF6E43B628012468006CE880 /* ResortDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortDetailsView.swift; sourceTree = "<group>"; };
+		DF6E43B828050D81006CE880 /* Facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facility.swift; sourceTree = "<group>"; };
+		DF6E43BA280513ED006CE880 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,9 @@
 				DF6E43B027FFF102006CE880 /* WelcomeView.swift */,
 				DF6E439E27FFD218006CE880 /* ContentView.swift */,
 				DF6E43B228011C48006CE880 /* ResortView.swift */,
+				DF6E43BA280513ED006CE880 /* Favorites.swift */,
+				DF3AFC092805291400A43E91 /* FileManager-DocumentsDirectory.swift */,
+				DF6E43B828050D81006CE880 /* Facility.swift */,
 				DF6E43B428012368006CE880 /* SkiDetailsView.swift */,
 				DF6E43B628012468006CE880 /* ResortDetailsView.swift */,
 				DF6E43AC27FFEB34006CE880 /* Resort.swift */,
@@ -162,7 +171,10 @@
 				DF6E43B127FFF102006CE880 /* WelcomeView.swift in Sources */,
 				DF6E43B528012368006CE880 /* SkiDetailsView.swift in Sources */,
 				DF6E43B728012468006CE880 /* ResortDetailsView.swift in Sources */,
+				DF6E43BB280513ED006CE880 /* Favorites.swift in Sources */,
+				DF6E43B928050D81006CE880 /* Facility.swift in Sources */,
 				DF6E439F27FFD218006CE880 /* ContentView.swift in Sources */,
+				DF3AFC0A2805291400A43E91 /* FileManager-DocumentsDirectory.swift in Sources */,
 				DF6E43AD27FFEB34006CE880 /* Resort.swift in Sources */,
 				DF6E43B328011C48006CE880 /* ResortView.swift in Sources */,
 				DF6E439D27FFD218006CE880 /* Project_19_SnowSeekerApp.swift in Sources */,
