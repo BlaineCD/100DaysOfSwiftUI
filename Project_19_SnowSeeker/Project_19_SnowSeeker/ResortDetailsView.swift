@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// MARK: - ResortDetailsView
+
 struct ResortDetailsView: View {
     let resort: Resort
 
@@ -17,7 +19,7 @@ struct ResortDetailsView: View {
         case 2:
             return "Medium"
         case 3:
-           return "Large"
+            return "Large"
         default:
             return "Unknown"
         }
@@ -46,6 +48,8 @@ struct ResortDetailsView: View {
         .frame(maxWidth: .infinity)
     }
 }
+
+// MARK: - ResortDetailsView_Previews
 
 struct ResortDetailsView_Previews: PreviewProvider {
     static var previews: some View {
