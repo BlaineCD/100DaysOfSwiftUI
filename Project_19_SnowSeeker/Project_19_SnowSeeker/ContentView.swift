@@ -9,7 +9,7 @@ import SwiftUI
 
 // MARK: - ContentView
 
-struct ContentView: View {
+struct ContentView: View { 
     enum SortedBy {
         case alphabetical
         case country
